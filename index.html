@@ -1,0 +1,3383 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <script>document.documentElement.classList.add('js')</script>
+  <title>Thiago Luza</title>
+  <meta name="description"
+    content="Sou o Thiago Luza e faço sites para empresas: rápidos, bonitos, que aparecem no Google e levam o cliente direto para o WhatsApp.">
+  <meta name="theme-color" content="#1B1D3A">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Thiago Luza · Sites que fazem o cliente chamar no WhatsApp">
+  <meta property="og:description" content="Sites rápidos para empresas, feitos para trazer cliente pelo WhatsApp.">
+  <meta property="og:image" content="og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Jersey+10&display=swap">
+  <style>
+    :root {
+      --tinta: #1B1D3A;
+      --texto: #2E3050;
+      --ceu: #8ED4FF;
+      --ceu-2: #C9ECFF;
+      --ouro: #FFD23F;
+      --ouro-esc: #E8A300;
+      --azul: #2747FF;
+      --verde: #5BC236;
+      --whats: #25D366;
+      --vermelho: #FF4D4D;
+      --creme: #FFF6E2;
+      --branco: #FFFFFF;
+      --px: 4px;
+      --sombra: 6px 6px 0 var(--tinta);
+      --sombra-p: 4px 4px 0 var(--tinta);
+      --gut: clamp(16px, 4vw, 40px);
+      --pixel: "Jersey 10", "Poppins", sans-serif;
+      --arcade: "Jersey 10", "Poppins", sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 76px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: #0E0F22;
+      color: var(--texto);
+      font: 400 1rem/1.65 "Poppins", system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    ul,
+    ol,
+    figure {
+      margin: 0;
+    }
+
+    ul,
+    ol {
+      padding: 0;
+      list-style: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--tinta);
+      font-family: var(--pixel);
+      font-weight: 400;
+      letter-spacing: .01em;
+      text-wrap: balance;
+    }
+
+    h1 {
+      font-size: clamp(3rem, 2rem + 4vw, 5rem);
+      line-height: .98;
+    }
+
+    h2 {
+      font-size: clamp(2.5rem, 1.8rem + 3vw, 4rem);
+      line-height: 1;
+    }
+
+    h3 {
+      font-family: var(--pixel);
+      font-weight: 400;
+      font-size: 1.9rem;
+      line-height: 1.05;
+      letter-spacing: .01em;
+    }
+
+    .wrap {
+      max-width: 1160px;
+      margin-inline: auto;
+      padding-inline: var(--gut);
+    }
+
+    .fase {
+      position: relative;
+      padding-block: clamp(64px, 9vw, 112px);
+    }
+
+    .fase-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+      padding: 8px 12px;
+      background: var(--tinta);
+      color: var(--ouro);
+      font: 400 1.36rem/1 var(--arcade);
+      letter-spacing: .04em;
+      box-shadow: var(--sombra-p);
+    }
+
+    .fase-tag b {
+      color: var(--branco);
+      font-weight: 400;
+    }
+
+    .sec-head {
+      display: grid;
+      gap: 18px;
+      max-width: 760px;
+      margin-bottom: clamp(36px, 5vw, 56px);
+    }
+
+    .sec-head>p {
+      font-size: 1.1rem;
+    }
+
+    .px-box {
+      border: var(--px) solid var(--tinta);
+      background: var(--branco);
+      box-shadow: var(--sombra);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 56px;
+      padding: 12px 24px;
+      border: var(--px) solid var(--tinta);
+      background: var(--branco);
+      color: var(--tinta);
+      font: 400 1.45rem/1 var(--pixel);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      cursor: pointer;
+      box-shadow: var(--sombra-p);
+      transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+    }
+
+    .btn:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 var(--tinta);
+    }
+
+    .btn:active {
+      transform: translate(4px, 4px);
+      box-shadow: 0 0 0 var(--tinta);
+    }
+
+    .btn svg {
+      width: 22px;
+      height: 22px;
+      flex: none;
+    }
+
+    .btn-start {
+      background: var(--whats);
+    }
+
+    .btn-start:hover {
+      background: #3BE07A;
+    }
+
+    .btn-ouro {
+      background: var(--ouro);
+    }
+
+    .hud {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: var(--tinta);
+      color: var(--branco);
+    }
+
+    .hud-in {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: clamp(14px, 3vw, 36px);
+      min-height: 66px;
+    }
+
+    .hud-nome {
+      display: flex;
+      align-items: center;
+      color: var(--branco);
+      text-decoration: none;
+      white-space: nowrap;
+      font: 400 2.9rem/1 var(--arcade);
+      letter-spacing: .04em;
+    }
+
+    .hud-nome b {
+      color: var(--ouro);
+      font-weight: 400;
+    }
+
+    .hud-nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(14px, 2vw, 28px);
+    }
+
+    .hud-nav a {
+      position: relative;
+      padding: 6px 0;
+      color: #B9BBDD;
+      font: 400 1.4rem/1 var(--arcade);
+      letter-spacing: .02em;
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+
+    .hud-nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -2px;
+      height: 4px;
+      background: var(--ouro);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .25s ease;
+    }
+
+    .hud-nav a:hover {
+      color: var(--branco);
+    }
+
+    .hud-nav a.on {
+      color: var(--ouro);
+    }
+
+    .hud-nav a.on::after,
+    .hud-nav a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .hud .btn {
+      min-height: 42px;
+      padding: 6px 14px;
+      border-width: 3px;
+      font-size: 1.25rem;
+      box-shadow: 3px 3px 0 #000;
+    }
+
+    .hud .btn {
+      color: #FFFFFF;
+    }
+
+    .hud .btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .hud-xp {
+      height: 6px;
+      background: #0B0C1E;
+      box-shadow: inset 0 2px 0 #000;
+    }
+
+    .hud-xp i {
+      display: block;
+      width: 0;
+      height: 100%;
+      background: repeating-linear-gradient(90deg, var(--ouro) 0 10px, #E8A300 10px 12px);
+      transition: width .15s linear;
+    }
+
+    .hero {
+      background: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2216%22%20height=%225%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%224%22%20y=%220%22%20width=%224%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%222%22%20y=%221%22%20width=%228%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2212%22%20y=%221%22%20width=%222%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%221%22%20y=%222%22%20width=%2214%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%220%22%20y=%223%22%20width=%2216%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%221%22%20y=%224%22%20width=%2214%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3C/svg%3E") 56% 4% / 96px 30px no-repeat, url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2216%22%20height=%225%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%224%22%20y=%220%22%20width=%224%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%222%22%20y=%221%22%20width=%228%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2212%22%20y=%221%22%20width=%222%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%221%22%20y=%222%22%20width=%2214%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%220%22%20y=%223%22%20width=%2216%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%221%22%20y=%224%22%20width=%2214%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3C/svg%3E") 97% 10% / 144px 45px no-repeat, linear-gradient(var(--ceu), var(--ceu-2));
+      padding-block: clamp(44px, 6vw, 80px) clamp(56px, 7vw, 88px);
+      image-rendering: pixelated;
+    }
+
+    .hero-in {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: clamp(32px, 5vw, 64px);
+      align-items: center;
+    }
+
+    .hero-txt {
+      display: grid;
+      gap: 22px;
+    }
+
+    .hero-txt>p:not(.fase-tag) {
+      max-width: 33em;
+      font-size: 1.15rem;
+      color: var(--tinta);
+    }
+
+    .hero h1 .destaque {
+      color: var(--azul);
+    }
+
+    .cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .vidas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      font: 400 1.28rem/1.6 var(--arcade);
+      color: var(--tinta);
+    }
+
+    .vidas li::before {
+      content: "♥ ";
+      color: var(--vermelho);
+    }
+
+    .pc {
+      position: relative;
+      width: 100%;
+      max-width: 560px;
+      justify-self: center;
+    }
+
+    .pc-sombra {
+      filter: drop-shadow(8px 8px 0 var(--tinta));
+    }
+
+    .pc-borda {
+      padding: 4px;
+      background: var(--tinta);
+      clip-path: polygon(0 12px, 6px 12px, 6px 6px, 12px 6px, 12px 0, calc(100% - 12px) 0, calc(100% - 12px) 6px, calc(100% - 6px) 6px, calc(100% - 6px) 12px, 100% 12px, 100% calc(100% - 12px), calc(100% - 6px) calc(100% - 12px), calc(100% - 6px) calc(100% - 6px), calc(100% - 12px) calc(100% - 6px), calc(100% - 12px) 100%, 12px 100%, 12px calc(100% - 6px), 6px calc(100% - 6px), 6px calc(100% - 12px), 0 calc(100% - 12px));
+    }
+
+    .pc-monitor {
+      padding: 22px 22px 16px;
+      background: #DCD3BC;
+      box-shadow: inset 0 -8px 0 #BDB295, inset 0 6px 0 #F0EADB, inset 6px 0 0 #E8E0CB, inset -6px 0 0 #C9BFA4;
+      clip-path: polygon(0 12px, 6px 12px, 6px 6px, 12px 6px, 12px 0, calc(100% - 12px) 0, calc(100% - 12px) 6px, calc(100% - 6px) 6px, calc(100% - 6px) 12px, 100% 12px, 100% calc(100% - 12px), calc(100% - 6px) calc(100% - 12px), calc(100% - 6px) calc(100% - 6px), calc(100% - 12px) calc(100% - 6px), calc(100% - 12px) 100%, 12px 100%, 12px calc(100% - 6px), 6px calc(100% - 6px), 6px calc(100% - 12px), 0 calc(100% - 12px));
+    }
+
+    .pc-tela {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border: 8px solid #2A2A33;
+      background: #0B0B10;
+      box-shadow: 0 0 0 4px var(--tinta);
+      font-family: var(--arcade);
+    }
+
+    .pc-tela::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 5;
+      background: repeating-linear-gradient(rgba(0, 0, 0, .16) 0 1px, transparent 1px 3px);
+      pointer-events: none;
+    }
+
+    .pc-rodape {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 12px;
+    }
+
+    .pc-marca {
+      color: #6B6250;
+      font: 400 1.15rem/1 var(--arcade);
+      letter-spacing: .14em;
+    }
+
+    .pc-luz {
+      width: 12px;
+      height: 12px;
+      background: #3FBF4A;
+      box-shadow: 0 0 0 3px var(--tinta), 0 0 8px 3px rgba(63, 191, 74, .7);
+    }
+
+    .pc-pe {
+      width: 26%;
+      height: 18px;
+      margin: 0 auto;
+      background: #BDB295;
+      box-shadow: inset 0 0 0 4px var(--tinta);
+    }
+
+    .pc-gabinete {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 20px;
+      background: #DCD3BC;
+      box-shadow: inset 0 0 0 4px var(--tinta), inset 0 -10px 0 #BDB295;
+    }
+
+    .pc-disquete {
+      width: 34%;
+      height: 12px;
+      background: #2A2A33;
+      box-shadow: 0 0 0 3px #BDB295;
+    }
+
+    .pc-gabinete i {
+      width: 10px;
+      height: 10px;
+      margin-left: auto;
+      background: #FFB020;
+      box-shadow: 0 0 6px 2px rgba(255, 176, 32, .7);
+    }
+
+    .pc-gabinete b {
+      width: 22px;
+      height: 22px;
+      background: #BDB295;
+      box-shadow: inset 0 0 0 4px var(--tinta);
+    }
+
+    .boot {
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+      padding: 14px 16px;
+      background: #0B0B10;
+      color: #C9F7C1;
+      font-size: 1.15rem;
+      line-height: 1.35;
+    }
+
+    .boot p {
+      opacity: 0;
+    }
+
+    .boot p.on {
+      opacity: 1;
+    }
+
+    .boot .cursor {
+      display: inline-block;
+      width: 10px;
+      height: 16px;
+      background: #C9F7C1;
+      vertical-align: -2px;
+      animation: cursor 1s step-end infinite;
+    }
+
+    @keyframes cursor {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .desk {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 6%;
+      background: #1E7F7A;
+    }
+
+    .janela {
+      width: 100%;
+      max-width: 420px;
+      background: #D4D0C8;
+      box-shadow: inset 2px 2px 0 #FFFFFF, inset -2px -2px 0 #404040, 0 0 0 2px #000;
+    }
+
+    .janela-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin: 3px;
+      padding: 4px 6px;
+      background: #1B2A8C;
+      color: #FFFFFF;
+      font-size: 1.1rem;
+    }
+
+    .janela-bar span:last-child {
+      width: 18px;
+      height: 16px;
+      background: #D4D0C8;
+      box-shadow: inset 1px 1px 0 #FFF, inset -1px -1px 0 #404040;
+      color: #000;
+      font-size: .9rem;
+      line-height: 16px;
+      text-align: center;
+    }
+
+    .janela-corpo {
+      display: grid;
+      gap: 10px;
+      padding: 12px 14px 14px;
+      color: #111;
+    }
+
+    .conexao {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 10px 8px;
+      background: #1E7F7A;
+      box-shadow: inset 2px 2px 0 #404040, inset -2px -2px 0 #FFFFFF;
+    }
+
+    .globo {
+      flex: none;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2232%22%20height=%2216%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20width=%2232%22%20height=%2216%22%20fill=%22%232F6BE0%22/%3E%3Crect%20x=%222%22%20y=%221%22%20width=%222%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2210%22%20y=%221%22%20width=%223%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2222%22%20y=%221%22%20width=%222%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%221%22%20y=%222%22%20width=%224%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%229%22%20y=%222%22%20width=%225%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2221%22%20y=%222%22%20width=%224%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2228%22%20y=%222%22%20width=%221%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%220%22%20y=%223%22%20width=%226%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%228%22%20y=%223%22%20width=%227%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2220%22%20y=%223%22%20width=%226%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2227%22%20y=%223%22%20width=%222%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%221%22%20y=%224%22%20width=%226%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%228%22%20y=%224%22%20width=%226%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2221%22%20y=%224%22%20width=%228%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%222%22%20y=%225%22%20width=%225%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%229%22%20y=%225%22%20width=%224%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2222%22%20y=%225%22%20width=%226%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%223%22%20y=%226%22%20width=%223%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2210%22%20y=%226%22%20width=%222%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2223%22%20y=%226%22%20width=%224%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%224%22%20y=%227%22%20width=%222%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2210%22%20y=%227%22%20width=%223%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2224%22%20y=%227%22%20width=%222%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%224%22%20y=%228%22%20width=%223%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2211%22%20y=%228%22%20width=%224%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2224%22%20y=%228%22%20width=%223%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%225%22%20y=%229%22%20width=%222%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2212%22%20y=%229%22%20width=%223%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2225%22%20y=%229%22%20width=%222%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%226%22%20y=%2210%22%20width=%221%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2213%22%20y=%2210%22%20width=%222%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2226%22%20y=%2210%22%20width=%221%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2214%22%20y=%2211%22%20width=%221%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2226%22%20y=%2212%22%20width=%222%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3Crect%20x=%2225%22%20y=%2213%22%20width=%224%22%20height=%221%22%20fill=%22%233FBF4A%22/%3E%3C/svg%3E") 0 0 / 112px 56px repeat-x;
+      image-rendering: pixelated;
+      box-shadow: inset -8px -6px 0 rgba(0, 0, 0, .25), 0 0 0 3px #0E2A5C;
+      animation: globo 3s linear infinite;
+    }
+
+    @keyframes globo {
+      to {
+        background-position: -112px 0;
+      }
+    }
+
+    .ico-pc {
+      flex: none;
+      width: 60px;
+      height: 52px;
+    }
+
+    .pontos {
+      display: flex;
+      gap: 6px;
+    }
+
+    .pontos i {
+      width: 8px;
+      height: 8px;
+      background: #0E3F3C;
+    }
+
+    .conectando .pontos i {
+      animation: ponto 1.2s steps(1) infinite;
+    }
+
+    .pontos i:nth-child(2) {
+      animation-delay: .2s;
+    }
+
+    .pontos i:nth-child(3) {
+      animation-delay: .4s;
+    }
+
+    .pontos i:nth-child(4) {
+      animation-delay: .6s;
+    }
+
+    .pontos i:nth-child(5) {
+      animation-delay: .8s;
+    }
+
+    @keyframes ponto {
+
+      0%,
+      30% {
+        background: #FFE35A;
+      }
+
+      31%,
+      100% {
+        background: #0E3F3C;
+      }
+    }
+
+    .conectado .pontos i {
+      background: #FFE35A;
+    }
+
+    .status {
+      min-height: 1.2em;
+      font-size: 1.15rem;
+      line-height: 1.2;
+    }
+
+    .barra {
+      height: 16px;
+      padding: 2px;
+      background: #FFFFFF;
+      box-shadow: inset 2px 2px 0 #404040, inset -2px -2px 0 #FFFFFF;
+    }
+
+    .barra i {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: repeating-linear-gradient(90deg, #1B2A8C 0 10px, transparent 10px 12px);
+      transition: width .6s ease;
+    }
+
+    .btn-win {
+      justify-self: center;
+      display: none;
+      padding: 7px 16px;
+      background: #D4D0C8;
+      color: #000;
+      font: 400 1.2rem/1 var(--arcade);
+      text-decoration: none;
+      box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #FFFFFF, 0 0 0 2px #000;
+    }
+
+    .btn-win:hover {
+      background: #E4E0D8;
+    }
+
+    .btn-win:active {
+      box-shadow: inset 2px 2px 0 #404040, inset -2px -2px 0 #FFFFFF, 0 0 0 2px #000;
+    }
+
+    .conectado .btn-win {
+      display: inline-block;
+      animation: aparece .4s ease;
+    }
+
+    @keyframes aparece {
+      from {
+        opacity: 0;
+        transform: translateY(4px);
+      }
+    }
+
+    .replay {
+      position: absolute;
+      right: 8px;
+      bottom: 6px;
+      z-index: 6;
+      padding: 2px 6px;
+      border: 0;
+      background: rgba(0, 0, 0, .35);
+      color: #FFFFFF;
+      font: 400 1rem/1 var(--arcade);
+      cursor: pointer;
+      display: none;
+    }
+
+    .pc-tela.fim .replay {
+      display: block;
+    }
+
+    .chao {
+      height: 32px;
+      background: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2232%22%20height=%2232%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20width=%2232%22%20height=%2232%22%20fill=%22%23B8733A%22/%3E%3Crect%20width=%2232%22%20height=%227%22%20fill=%22%235BC236%22/%3E%3Crect%20y=%227%22%20width=%2232%22%20height=%222%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%222%22%20y=%220%22%20width=%222%22%20height=%222%22%20fill=%22%237FDB4F%22/%3E%3Crect%20x=%229%22%20y=%222%22%20width=%222%22%20height=%222%22%20fill=%22%237FDB4F%22/%3E%3Crect%20x=%2217%22%20y=%221%22%20width=%222%22%20height=%222%22%20fill=%22%237FDB4F%22/%3E%3Crect%20x=%2225%22%20y=%223%22%20width=%222%22%20height=%222%22%20fill=%22%237FDB4F%22/%3E%3Crect%20x=%225%22%20y=%224%22%20width=%222%22%20height=%222%22%20fill=%22%237FDB4F%22/%3E%3Crect%20x=%2221%22%20y=%225%22%20width=%222%22%20height=%222%22%20fill=%22%237FDB4F%22/%3E%3Crect%20x=%2229%22%20y=%220%22%20width=%222%22%20height=%222%22%20fill=%22%237FDB4F%22/%3E%3Crect%20x=%224%22%20y=%2214%22%20width=%223%22%20height=%222%22%20fill=%22%238A5428%22/%3E%3Crect%20x=%2214%22%20y=%2220%22%20width=%223%22%20height=%222%22%20fill=%22%238A5428%22/%3E%3Crect%20x=%2224%22%20y=%2213%22%20width=%223%22%20height=%222%22%20fill=%22%238A5428%22/%3E%3Crect%20x=%228%22%20y=%2226%22%20width=%223%22%20height=%222%22%20fill=%22%238A5428%22/%3E%3Crect%20x=%2220%22%20y=%2228%22%20width=%223%22%20height=%222%22%20fill=%22%238A5428%22/%3E%3Crect%20x=%2228%22%20y=%2222%22%20width=%223%22%20height=%222%22%20fill=%22%238A5428%22/%3E%3C/svg%3E") 0 0 / 32px 32px repeat-x;
+      image-rendering: pixelated;
+    }
+
+    .chao-pedra {
+      height: 32px;
+      background: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2232%22%20height=%2232%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20width=%2232%22%20height=%2232%22%20fill=%22%233E3E5E%22/%3E%3Crect%20x=%220%22%20y=%220%22%20width=%2215%22%20height=%227%22%20fill=%22%2355557A%22/%3E%3Crect%20x=%220%22%20y=%220%22%20width=%2215%22%20height=%221%22%20fill=%22%236E6E9A%22/%3E%3Crect%20x=%2216%22%20y=%220%22%20width=%2216%22%20height=%227%22%20fill=%22%2355557A%22/%3E%3Crect%20x=%2216%22%20y=%220%22%20width=%2216%22%20height=%221%22%20fill=%22%236E6E9A%22/%3E%3Crect%20x=%228%22%20y=%228%22%20width=%2215%22%20height=%227%22%20fill=%22%2355557A%22/%3E%3Crect%20x=%228%22%20y=%228%22%20width=%2215%22%20height=%221%22%20fill=%22%236E6E9A%22/%3E%3Crect%20x=%2224%22%20y=%228%22%20width=%228%22%20height=%227%22%20fill=%22%2355557A%22/%3E%3Crect%20x=%2224%22%20y=%228%22%20width=%228%22%20height=%221%22%20fill=%22%236E6E9A%22/%3E%3Crect%20x=%220%22%20y=%228%22%20width=%227%22%20height=%227%22%20fill=%22%2355557A%22/%3E%3Crect%20x=%220%22%20y=%228%22%20width=%227%22%20height=%221%22%20fill=%22%236E6E9A%22/%3E%3Crect%20x=%220%22%20y=%2216%22%20width=%2215%22%20height=%227%22%20fill=%22%2355557A%22/%3E%3Crect%20x=%220%22%20y=%2216%22%20width=%2215%22%20height=%221%22%20fill=%22%236E6E9A%22/%3E%3Crect%20x=%2216%22%20y=%2216%22%20width=%2216%22%20height=%227%22%20fill=%22%2355557A%22/%3E%3Crect%20x=%2216%22%20y=%2216%22%20width=%2216%22%20height=%221%22%20fill=%22%236E6E9A%22/%3E%3Crect%20x=%228%22%20y=%2224%22%20width=%2215%22%20height=%227%22%20fill=%22%2355557A%22/%3E%3Crect%20x=%228%22%20y=%2224%22%20width=%2215%22%20height=%221%22%20fill=%22%236E6E9A%22/%3E%3Crect%20x=%2224%22%20y=%2224%22%20width=%228%22%20height=%227%22%20fill=%22%2355557A%22/%3E%3Crect%20x=%2224%22%20y=%2224%22%20width=%228%22%20height=%221%22%20fill=%22%236E6E9A%22/%3E%3Crect%20x=%220%22%20y=%2224%22%20width=%227%22%20height=%227%22%20fill=%22%2355557A%22/%3E%3Crect%20x=%220%22%20y=%2224%22%20width=%227%22%20height=%221%22%20fill=%22%236E6E9A%22/%3E%3C/svg%3E") 0 0 / 32px 32px repeat-x;
+      image-rendering: pixelated;
+    }
+
+    .caverna {
+      background: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2232%22%20height=%2216%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20width=%2232%22%20height=%2216%22%20fill=%22%2320203A%22/%3E%3Crect%20x=%220%22%20y=%220%22%20width=%2215%22%20height=%227%22%20fill=%22%2325254A%22/%3E%3Crect%20x=%2216%22%20y=%220%22%20width=%2216%22%20height=%227%22%20fill=%22%2325254A%22/%3E%3Crect%20x=%228%22%20y=%228%22%20width=%2215%22%20height=%227%22%20fill=%22%2325254A%22/%3E%3Crect%20x=%2224%22%20y=%228%22%20width=%228%22%20height=%227%22%20fill=%22%2325254A%22/%3E%3Crect%20x=%220%22%20y=%228%22%20width=%227%22%20height=%227%22%20fill=%22%2325254A%22/%3E%3C/svg%3E") 0 0 / 64px 32px, #20203A;
+      color: #D5D6F2;
+      image-rendering: pixelated;
+    }
+
+    .caverna h2,
+    .caverna h3 {
+      color: var(--branco);
+    }
+
+    .viloes {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .vilao {
+      display: grid;
+      gap: 12px;
+      align-content: start;
+      padding: 24px;
+      border: var(--px) solid #000;
+      background: #2C2D52;
+      box-shadow: 6px 6px 0 #000;
+    }
+
+    .vilao .hp {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font: 400 1.19rem/1 var(--arcade);
+      color: var(--vermelho);
+    }
+
+    .vilao .hp span {
+      flex: 1;
+      height: 10px;
+      border: 2px solid #000;
+      background: linear-gradient(90deg, var(--vermelho) 0 var(--vida, 80%), #45466E var(--vida, 80%));
+    }
+
+    .vilao .golpe {
+      margin-top: 4px;
+      padding-top: 12px;
+      border-top: 3px dashed #45466E;
+      color: var(--ouro);
+      font-weight: 700;
+    }
+
+    .campo {
+      background: linear-gradient(#C9ECFF, #E4F7D2);
+    }
+
+    .case {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    }
+
+    .case-img {
+      padding: clamp(18px, 3vw, 30px);
+      background: #9CE5FF;
+      border-right: var(--px) solid var(--tinta);
+      display: grid;
+      place-items: center;
+    }
+
+    .case-img img {
+      border: 3px solid var(--tinta);
+      box-shadow: var(--sombra-p);
+    }
+
+    .case-txt {
+      display: grid;
+      gap: 16px;
+      align-content: start;
+      padding: clamp(22px, 3vw, 34px);
+    }
+
+    .estrelas-nota {
+      color: var(--ouro-esc);
+      font: 400 1.89rem/1 var(--arcade);
+      letter-spacing: .1em;
+    }
+
+    .conquistas {
+      display: grid;
+      gap: 10px;
+    }
+
+    .conquistas li {
+      display: grid;
+      grid-template-columns: 26px 1fr;
+      gap: 10px;
+      align-items: start;
+    }
+
+    .conquistas li::before {
+      content: "";
+      width: 22px;
+      height: 22px;
+      margin-top: 1px;
+      background: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%208%208%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%222%22%20y=%220%22%20width=%224%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%221%22%20y=%221%22%20width=%221%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%222%22%20y=%221%22%20width=%224%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3Crect%20x=%226%22%20y=%221%22%20width=%221%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%220%22%20y=%222%22%20width=%221%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%221%22%20y=%222%22%20width=%221%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3Crect%20x=%222%22%20y=%222%22%20width=%223%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%225%22%20y=%222%22%20width=%222%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3Crect%20x=%227%22%20y=%222%22%20width=%221%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%220%22%20y=%223%22%20width=%221%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%221%22%20y=%223%22%20width=%221%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3Crect%20x=%222%22%20y=%223%22%20width=%221%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%223%22%20y=%223%22%20width=%224%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3Crect%20x=%227%22%20y=%223%22%20width=%221%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%220%22%20y=%224%22%20width=%221%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%221%22%20y=%224%22%20width=%221%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3Crect%20x=%222%22%20y=%224%22%20width=%221%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%223%22%20y=%224%22%20width=%224%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3Crect%20x=%227%22%20y=%224%22%20width=%221%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%220%22%20y=%225%22%20width=%221%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%221%22%20y=%225%22%20width=%221%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3Crect%20x=%222%22%20y=%225%22%20width=%223%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%225%22%20y=%225%22%20width=%222%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3Crect%20x=%227%22%20y=%225%22%20width=%221%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%221%22%20y=%226%22%20width=%221%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%222%22%20y=%226%22%20width=%224%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3Crect%20x=%226%22%20y=%226%22%20width=%221%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3Crect%20x=%222%22%20y=%227%22%20width=%224%22%20height=%221%22%20fill=%22%23E8A300%22/%3E%3C/svg%3E") center / contain no-repeat;
+      image-rendering: pixelated;
+    }
+
+    .case-txt small {
+      font: 400 1.19rem/1.4 var(--arcade);
+      color: #6B6E99;
+    }
+
+    .link-px {
+      width: fit-content;
+      font-family: "Jersey 10", var(--pixel);
+      font-weight: 400;
+      font-size: 1.5rem;
+      color: var(--azul);
+      text-decoration: none;
+      border-bottom: 3px solid var(--azul);
+    }
+
+    .link-px:hover {
+      color: var(--tinta);
+      border-color: var(--tinta);
+    }
+
+    .vitrine {
+      background: linear-gradient(rgba(27, 29, 58, .06) 1px, transparent 1px) 0 0 / 24px 24px, linear-gradient(90deg, rgba(27, 29, 58, .06) 1px, transparent 1px) 0 0 / 24px 24px, #F4F0E6;
+      color: var(--texto);
+      padding-block: clamp(28px, 3vw, 40px);
+    }
+
+    .vitrine h2 {
+      color: var(--tinta);
+    }
+
+    .vitrine .wrap {
+      max-width: 1320px;
+    }
+
+    .vitrine .sec-head {
+      margin-bottom: 28px;
+      gap: 12px;
+    }
+
+    .vitrine .sec-head>p {
+      color: #55587F;
+    }
+
+    .vitrine-in {
+      display: grid;
+      grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr);
+      gap: clamp(28px, 4vw, 64px);
+      align-items: center;
+    }
+
+    .projetos {
+      display: grid;
+      border-top: 2px solid #D8D1C1;
+    }
+
+    .projeto {
+      --cor: var(--azul);
+      position: relative;
+      display: grid;
+      grid-template-columns: 44px minmax(0, 1fr);
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      padding: 18px 8px 18px 18px;
+      border: 0;
+      border-bottom: 2px solid #D8D1C1;
+      background: transparent;
+      color: #6F7299;
+      text-align: left;
+      cursor: pointer;
+      transition: color .2s ease, background-color .2s ease;
+    }
+
+    .projeto::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 14px;
+      bottom: 14px;
+      width: 4px;
+      background: var(--cor);
+      transform: scaleY(0);
+      transition: transform .25s ease;
+    }
+
+    .projeto:hover {
+      color: var(--tinta);
+      background: rgba(27, 29, 58, .03);
+    }
+
+    .projeto.on {
+      color: var(--tinta);
+      background: #FFFFFF;
+    }
+
+    .projeto.on::before {
+      transform: scaleY(1);
+    }
+
+    .projeto-n {
+      font: 400 1.5rem/1 var(--arcade);
+      color: #A9A3C4;
+      transition: color .2s ease;
+    }
+
+    .projeto.on .projeto-n {
+      color: var(--cor);
+    }
+
+    .projeto-info {
+      display: grid;
+      gap: 4px;
+      min-width: 0;
+    }
+
+    .projeto-info b {
+      font: 400 1.65rem/1.05 var(--arcade);
+      color: inherit;
+    }
+
+    .projeto-info small {
+      font-size: .88rem;
+      color: #8A8DAF;
+    }
+
+    .projeto .projeto-logo {
+      display: none;
+    }
+
+    .projeto.on .projeto-info small {
+      color: #55587F;
+    }
+
+    .proximo-link {
+      display: inline-flex;
+      gap: 8px;
+      margin-top: 22px;
+      color: var(--azul);
+      font: 400 1.3rem/1 var(--arcade);
+      text-decoration: none;
+      border-bottom: 2px dashed rgba(39, 71, 255, .45);
+      padding-bottom: 4px;
+    }
+
+    .proximo-link:hover {
+      border-bottom-style: solid;
+    }
+
+    .palco {
+      display: grid;
+    }
+
+    .cena {
+      grid-area: 1 / 1;
+      display: grid;
+      gap: 18px;
+      align-content: start;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .35s ease, visibility .35s;
+    }
+
+    .cena.on {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .cena-img {
+      display: block;
+      border: 3px solid var(--tinta);
+      background: var(--tinta);
+      box-shadow: 8px 8px 0 var(--tinta);
+      overflow: hidden;
+    }
+
+    .cena-img img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      object-position: top;
+      transform: scale(1.02);
+      transition: transform .5s ease;
+    }
+
+    .cena.on .cena-img img {
+      transform: none;
+    }
+
+    .cena-img:hover img {
+      transform: scale(1.015);
+    }
+
+    .cena-info {
+      display: grid;
+      gap: 12px;
+    }
+
+    .cena-topo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .cena-logo {
+      display: grid;
+      place-items: center;
+      flex: none;
+      width: 96px;
+      height: 52px;
+      padding: 6px 8px;
+      background: #FFFFFF;
+      border: 2px solid #D8D1C1;
+    }
+
+    .cena-logo img {
+      max-width: 100%;
+      max-height: 40px;
+      object-fit: contain;
+    }
+
+    .cena-topo h3 {
+      color: var(--tinta);
+    }
+
+    .cena-topo small {
+      color: #6F7299;
+      font-size: .9rem;
+    }
+
+    .cena-info>p {
+      color: var(--texto);
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 64ch;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chips li {
+      padding: 5px 10px;
+      border: 2px solid #D8D1C1;
+      background: #FFFFFF;
+      color: var(--tinta);
+      font-size: .85rem;
+      font-weight: 500;
+    }
+
+    .chips li::before {
+      content: "✓ ";
+      color: #1FA857;
+      font-weight: 700;
+    }
+
+    .cena-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn-site {
+      background: var(--azul);
+      color: var(--branco);
+      box-shadow: 4px 4px 0 var(--tinta);
+    }
+
+    .btn-site:hover {
+      background: #3B5BFF;
+      box-shadow: 6px 6px 0 var(--tinta);
+    }
+
+    .btn-site span {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+    }
+
+    .btn-assim {
+      background: #FFFFFF;
+      color: var(--tinta);
+      border-color: var(--tinta);
+      box-shadow: 4px 4px 0 var(--tinta);
+    }
+
+    .btn-assim:hover {
+      background: var(--tinta);
+      color: var(--branco);
+      box-shadow: 6px 6px 0 var(--tinta);
+    }
+
+    .vitrine .btn {
+      min-height: 50px;
+      font-size: 1.3rem;
+    }
+
+    .cases-mini {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 26px;
+    }
+
+    .mini {
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    .mini-img {
+      display: block;
+      border-bottom: var(--px) solid var(--tinta);
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .mini-img img {
+      transition: transform .4s ease;
+    }
+
+    .mini-img:hover img {
+      transform: scale(1.04);
+    }
+
+    .mini-txt {
+      display: grid;
+      gap: 12px;
+      align-content: start;
+      padding: 22px 24px 24px;
+    }
+
+    .mini-txt small {
+      font: 400 1.19rem/1.4 var(--arcade);
+      color: #6B6E99;
+    }
+
+    .proxima {
+      display: grid;
+      place-items: center;
+      gap: 8px;
+      margin-top: 26px;
+      padding: 30px 20px;
+      border: var(--px) dashed var(--tinta);
+      text-align: center;
+    }
+
+    .proxima b {
+      font: 400 1.65rem/1.5 var(--arcade);
+      color: var(--tinta);
+    }
+
+    .degrau {
+      height: 32px;
+      background-repeat: repeat-x;
+      background-size: 128px 32px;
+      image-rendering: pixelated;
+    }
+
+    .degrau-caverna-vitrine {
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22128%22%20height=%2232%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20width=%22128%22%20height=%2232%22%20fill=%22%2320203A%22/%3E%3Crect%20x=%220%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%228%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%2216%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%2224%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%2232%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%2240%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%2248%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%2256%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%2264%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%2272%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%2280%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%2288%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%2296%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%22104%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%22112%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%22120%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23F4F0E6%22/%3E%3C/svg%3E");
+    }
+
+    .degrau-vitrine-trilha {
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22128%22%20height=%2232%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20width=%22128%22%20height=%2232%22%20fill=%22%23F4F0E6%22/%3E%3Crect%20x=%220%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%228%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%2216%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%2224%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%2232%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%2240%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%2248%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%2256%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%2264%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%2272%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%2280%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%2288%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%2296%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%22104%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%22112%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23FFE2B0%22/%3E%3Crect%20x=%22120%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23FFE2B0%22/%3E%3C/svg%3E");
+    }
+
+    .degrau-trilha-loja {
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22128%22%20height=%2232%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20width=%22128%22%20height=%2232%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%220%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%228%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%2216%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%2224%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%2232%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%2240%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%2248%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%2256%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%2264%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%2272%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%2280%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%2288%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%2296%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%22104%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%22112%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%22120%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%235E3A22%22/%3E%3C/svg%3E");
+    }
+
+    .degrau-loja-vila {
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22128%22%20height=%2232%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20width=%22128%22%20height=%2232%22%20fill=%22%235E3A22%22/%3E%3Crect%20x=%220%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%228%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%2216%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%2224%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%2232%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%2240%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%2248%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%2256%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%2264%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%2272%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%2280%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%2288%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%2296%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%22104%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%22112%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%235FB8F5%22/%3E%3Crect%20x=%22120%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%235FB8F5%22/%3E%3C/svg%3E");
+    }
+
+    .degrau-vila-castelo {
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22128%22%20height=%2232%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20width=%22128%22%20height=%2232%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%220%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23141530%22/%3E%3Crect%20x=%228%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23141530%22/%3E%3Crect%20x=%2216%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23141530%22/%3E%3Crect%20x=%2224%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23141530%22/%3E%3Crect%20x=%2232%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%23141530%22/%3E%3Crect%20x=%2240%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%23141530%22/%3E%3Crect%20x=%2248%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23141530%22/%3E%3Crect%20x=%2256%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23141530%22/%3E%3Crect%20x=%2264%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23141530%22/%3E%3Crect%20x=%2272%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23141530%22/%3E%3Crect%20x=%2280%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23141530%22/%3E%3Crect%20x=%2288%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%23141530%22/%3E%3Crect%20x=%2296%22%20y=%224%22%20width=%228%22%20height=%2228%22%20fill=%22%23141530%22/%3E%3Crect%20x=%22104%22%20y=%2212%22%20width=%228%22%20height=%2220%22%20fill=%22%23141530%22/%3E%3Crect%20x=%22112%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23141530%22/%3E%3Crect%20x=%22120%22%20y=%2220%22%20width=%228%22%20height=%2212%22%20fill=%22%23141530%22/%3E%3C/svg%3E");
+    }
+
+    .trilha {
+      position: relative;
+      background: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22192%22%20height=%2248%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%220%22%20y=%2240%22%20width=%2212%22%20height=%228%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%2212%22%20y=%2240%22%20width=%2212%22%20height=%228%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%2224%22%20y=%2236%22%20width=%2212%22%20height=%2212%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%2236%22%20y=%2232%22%20width=%2212%22%20height=%2216%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%2248%22%20y=%2228%22%20width=%2212%22%20height=%2220%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%2260%22%20y=%2228%22%20width=%2212%22%20height=%2220%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%2272%22%20y=%2232%22%20width=%2212%22%20height=%2216%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%2284%22%20y=%2236%22%20width=%2212%22%20height=%2212%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%2296%22%20y=%2240%22%20width=%2212%22%20height=%228%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%22108%22%20y=%2240%22%20width=%2212%22%20height=%228%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%22120%22%20y=%2236%22%20width=%2212%22%20height=%2212%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%22132%22%20y=%2232%22%20width=%2212%22%20height=%2216%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%22144%22%20y=%2232%22%20width=%2212%22%20height=%2216%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%22156%22%20y=%2236%22%20width=%2212%22%20height=%2212%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%22168%22%20y=%2240%22%20width=%2212%22%20height=%228%22%20fill=%22%23E8955A%22/%3E%3Crect%20x=%22180%22%20y=%2240%22%20width=%2212%22%20height=%228%22%20fill=%22%23E8955A%22/%3E%3C/svg%3E") 0 100% / 192px 48px repeat-x, url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22192%22%20height=%2248%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%220%22%20y=%2236%22%20width=%2212%22%20height=%2212%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%2212%22%20y=%2232%22%20width=%2212%22%20height=%2216%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%2224%22%20y=%2228%22%20width=%2212%22%20height=%2220%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%2236%22%20y=%2224%22%20width=%2212%22%20height=%2224%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%2248%22%20y=%2220%22%20width=%2212%22%20height=%2228%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%2260%22%20y=%2216%22%20width=%2212%22%20height=%2232%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%2272%22%20y=%2216%22%20width=%2212%22%20height=%2232%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%2284%22%20y=%2220%22%20width=%2212%22%20height=%2228%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%2296%22%20y=%2224%22%20width=%2212%22%20height=%2224%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%22108%22%20y=%2228%22%20width=%2212%22%20height=%2220%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%22120%22%20y=%2232%22%20width=%2212%22%20height=%2216%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%22132%22%20y=%2232%22%20width=%2212%22%20height=%2216%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%22144%22%20y=%2228%22%20width=%2212%22%20height=%2220%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%22156%22%20y=%2224%22%20width=%2212%22%20height=%2224%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%22168%22%20y=%2228%22%20width=%2212%22%20height=%2220%22%20fill=%22%23F2B979%22/%3E%3Crect%20x=%22180%22%20y=%2232%22%20width=%2212%22%20height=%2216%22%20fill=%22%23F2B979%22/%3E%3C/svg%3E") 64px 100% / 192px 48px repeat-x, url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2216%22%20height=%2216%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%224%22%20y=%220%22%20width=%228%22%20height=%2216%22%20fill=%22%23FFF3C4%22/%3E%3Crect%20x=%220%22%20y=%224%22%20width=%2216%22%20height=%228%22%20fill=%22%23FFF3C4%22/%3E%3Crect%20x=%222%22%20y=%222%22%20width=%2212%22%20height=%2212%22%20fill=%22%23FFF3C4%22/%3E%3C/svg%3E") 86% 18% / 96px 96px no-repeat, linear-gradient(#FFE2B0, #FFC98A);
+      padding-bottom: calc(clamp(64px, 9vw, 112px) + 40px);
+      image-rendering: pixelated;
+    }
+
+    .passos {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(24px, 4vw, 48px);
+      counter-reset: passo;
+    }
+
+    .passos::before {
+      content: "";
+      position: absolute;
+      left: 10%;
+      right: 10%;
+      top: 62px;
+      height: 6px;
+      background: repeating-linear-gradient(90deg, var(--tinta) 0 12px, transparent 12px 22px);
+    }
+
+    .passo {
+      position: relative;
+      z-index: 1;
+      counter-increment: passo;
+    }
+
+    .js .passos::before {
+      opacity: 0;
+      transition: opacity .6s ease .2s;
+    }
+
+    .js .passos.prontos::before {
+      opacity: 1;
+    }
+
+    .passo-card {
+      position: relative;
+      display: grid;
+      justify-items: center;
+      gap: 14px;
+      height: 100%;
+      padding: 26px 22px 0;
+      background: #FFFFFF;
+      text-align: center;
+      box-shadow: 0 0 0 4px var(--tinta), 6px 6px 0 4px var(--tinta);
+    }
+
+    .passo-card::after {
+      content: "";
+      align-self: end;
+      width: calc(100% + 44px);
+      height: 14px;
+      margin-top: 4px;
+      background: repeating-linear-gradient(90deg, #B8733A 0 30px, #8A5428 30px 32px);
+      box-shadow: inset 0 4px 0 #5BC236;
+    }
+
+    .passo-icone {
+      position: relative;
+      display: grid;
+      place-items: center;
+      width: 80px;
+      height: 72px;
+      background: #EEF2FF;
+      box-shadow: inset 0 0 0 3px var(--tinta);
+    }
+
+    .passo-ico {
+      width: 54px;
+      height: 46px;
+    }
+
+    .passo-icone::after {
+      content: counter(passo);
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      display: grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      background: var(--ouro);
+      color: var(--tinta);
+      font: 400 1.3rem/1 var(--arcade);
+      box-shadow: 0 0 0 3px var(--tinta);
+    }
+
+    .passo-txt {
+      display: grid;
+      gap: 8px;
+      justify-items: center;
+    }
+
+    .passo-txt p {
+      font-size: .96rem;
+      line-height: 1.55;
+    }
+
+    .passo-prazo {
+      padding: 4px 10px;
+      background: var(--tinta);
+      color: var(--ouro);
+      font: 400 1.05rem/1 var(--arcade);
+    }
+
+    .checkpoints {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      counter-reset: cp;
+    }
+
+    .checkpoint {
+      position: relative;
+      display: grid;
+      gap: 10px;
+      align-content: start;
+      padding: 26px 24px 24px;
+      counter-increment: cp;
+    }
+
+    .checkpoint::before {
+      content: "PASSO " counter(cp);
+      font: 400 1.23rem/1 var(--arcade);
+      color: var(--azul);
+    }
+
+    .bandeira {
+      position: absolute;
+      right: 18px;
+      top: -26px;
+      width: 28px;
+      height: 40px;
+    }
+
+    .loja {
+      background: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2232%22%20height=%2216%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20width=%2232%22%20height=%2216%22%20fill=%22%235E3A22%22/%3E%3Crect%20width=%2232%22%20height=%221%22%20fill=%22%237A4C2E%22/%3E%3Crect%20y=%228%22%20width=%2232%22%20height=%221%22%20fill=%22%237A4C2E%22/%3E%3Crect%20x=%2210%22%20y=%221%22%20width=%221%22%20height=%227%22%20fill=%22%2345291A%22/%3E%3Crect%20x=%2224%22%20y=%229%22%20width=%221%22%20height=%227%22%20fill=%22%2345291A%22/%3E%3C/svg%3E") 0 0 / 64px 32px, #5E3A22;
+      color: #F3E3D0;
+      image-rendering: pixelated;
+    }
+
+    .loja h2 {
+      color: var(--branco);
+    }
+
+    .loja .sec-head>p {
+      color: #F3E3D0;
+    }
+
+    .balcao {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr);
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .item {
+      display: grid;
+      gap: 12px;
+      align-content: start;
+      padding: 22px;
+      border: var(--px) solid #000;
+      background: var(--creme);
+      color: var(--texto);
+      box-shadow: 6px 6px 0 #000;
+    }
+
+    .item .ico {
+      width: 92px;
+      height: 80px;
+      object-fit: contain;
+      object-position: left center;
+    }
+
+    .item .raro {
+      font: 400 1.16rem/1 var(--arcade);
+      color: var(--azul);
+    }
+
+    .item.lendario {
+      background: var(--ouro);
+    }
+
+    .item.lendario .raro {
+      color: #8A5A00;
+    }
+
+    .preco {
+      font: 400 2.75rem/1 var(--arcade);
+      color: var(--tinta);
+      letter-spacing: -.02em;
+    }
+
+    .preco small {
+      font: 600 .95rem/1 "Poppins", sans-serif;
+      letter-spacing: 0;
+      opacity: .75;
+    }
+
+    .itens-mes {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .itens-mes .item {
+      padding: 18px;
+    }
+
+    .itens-mes .item .ico {
+      width: 72px;
+      height: 64px;
+    }
+
+    .itens-mes .preco {
+      font-size: 2.1rem;
+    }
+
+    .stats {
+      display: grid;
+      gap: 6px;
+      font: 400 1.03rem/1 var(--arcade);
+    }
+
+    .stats div {
+      display: grid;
+      grid-template-columns: 62px 1fr;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .stats span {
+      height: 8px;
+      border: 2px solid var(--tinta);
+      background: linear-gradient(90deg, var(--azul) 0 var(--v), transparent var(--v));
+    }
+
+    .item ul {
+      display: grid;
+      gap: 6px;
+      font-size: .95rem;
+    }
+
+    .item ul li::before {
+      content: "▸ ";
+      color: var(--azul);
+      font-weight: 800;
+    }
+
+    .mensal-head {
+      grid-column: 1 / -1;
+      color: var(--ouro);
+      font: 400 1.36rem/1.4 var(--arcade);
+    }
+
+    .loja .nota {
+      margin-top: 18px;
+      font-size: .92rem;
+      color: #E2CDB4;
+    }
+
+    .vila {
+      background: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2216%22%20height=%225%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%224%22%20y=%220%22%20width=%224%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%222%22%20y=%221%22%20width=%228%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2212%22%20y=%221%22%20width=%222%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%221%22%20y=%222%22%20width=%2214%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%220%22%20y=%223%22%20width=%2216%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%221%22%20y=%224%22%20width=%2214%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3C/svg%3E") 12% 10% / 128px 40px no-repeat, url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2216%22%20height=%225%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%224%22%20y=%220%22%20width=%224%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%222%22%20y=%221%22%20width=%228%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2212%22%20y=%221%22%20width=%222%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%221%22%20y=%222%22%20width=%2214%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%220%22%20y=%223%22%20width=%2216%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%221%22%20y=%224%22%20width=%2214%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3C/svg%3E") 78% 22% / 96px 30px no-repeat, url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22320%22%20height=%22140%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%220%22%20y=%2262%22%20width=%22320%22%20height=%2230%22%20fill=%22%232F8FE0%22/%3E%3Crect%20x=%220%22%20y=%2262%22%20width=%22320%22%20height=%223%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%226%22%20y=%2270%22%20width=%2210%22%20height=%222%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%2216%22%20y=%2280%22%20width=%226%22%20height=%222%22%20fill=%22%235CB3F0%22/%3E%3Crect%20x=%2230%22%20y=%2270%22%20width=%2210%22%20height=%222%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%2240%22%20y=%2280%22%20width=%226%22%20height=%222%22%20fill=%22%235CB3F0%22/%3E%3Crect%20x=%2254%22%20y=%2270%22%20width=%2210%22%20height=%222%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%2264%22%20y=%2280%22%20width=%226%22%20height=%222%22%20fill=%22%235CB3F0%22/%3E%3Crect%20x=%2278%22%20y=%2270%22%20width=%2210%22%20height=%222%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%2288%22%20y=%2280%22%20width=%226%22%20height=%222%22%20fill=%22%235CB3F0%22/%3E%3Crect%20x=%22102%22%20y=%2270%22%20width=%2210%22%20height=%222%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%22112%22%20y=%2280%22%20width=%226%22%20height=%222%22%20fill=%22%235CB3F0%22/%3E%3Crect%20x=%22126%22%20y=%2270%22%20width=%2210%22%20height=%222%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%22136%22%20y=%2280%22%20width=%226%22%20height=%222%22%20fill=%22%235CB3F0%22/%3E%3Crect%20x=%22150%22%20y=%2270%22%20width=%2210%22%20height=%222%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%22160%22%20y=%2280%22%20width=%226%22%20height=%222%22%20fill=%22%235CB3F0%22/%3E%3Crect%20x=%22174%22%20y=%2270%22%20width=%2210%22%20height=%222%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%22184%22%20y=%2280%22%20width=%226%22%20height=%222%22%20fill=%22%235CB3F0%22/%3E%3Crect%20x=%22198%22%20y=%2270%22%20width=%2210%22%20height=%222%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%22208%22%20y=%2280%22%20width=%226%22%20height=%222%22%20fill=%22%235CB3F0%22/%3E%3Crect%20x=%22222%22%20y=%2270%22%20width=%2210%22%20height=%222%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%22232%22%20y=%2280%22%20width=%226%22%20height=%222%22%20fill=%22%235CB3F0%22/%3E%3Crect%20x=%22246%22%20y=%2270%22%20width=%2210%22%20height=%222%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%22256%22%20y=%2280%22%20width=%226%22%20height=%222%22%20fill=%22%235CB3F0%22/%3E%3Crect%20x=%22270%22%20y=%2270%22%20width=%2210%22%20height=%222%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%22280%22%20y=%2280%22%20width=%226%22%20height=%222%22%20fill=%22%235CB3F0%22/%3E%3Crect%20x=%22294%22%20y=%2270%22%20width=%2210%22%20height=%222%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%22304%22%20y=%2280%22%20width=%226%22%20height=%222%22%20fill=%22%235CB3F0%22/%3E%3Crect%20x=%22318%22%20y=%2270%22%20width=%2210%22%20height=%222%22%20fill=%22%238ED4FF%22/%3E%3Crect%20x=%22328%22%20y=%2280%22%20width=%226%22%20height=%222%22%20fill=%22%235CB3F0%22/%3E%3Crect%20x=%220%22%20y=%2296%22%20width=%2216%22%20height=%2244%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%220%22%20y=%2296%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%220%22%20y=%22104%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%220%22%20y=%22114%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%220%22%20y=%22124%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%220%22%20y=%22134%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2216%22%20y=%2296%22%20width=%2216%22%20height=%2244%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%2216%22%20y=%2296%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%2216%22%20y=%22104%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%2216%22%20y=%22114%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2216%22%20y=%22124%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2216%22%20y=%22134%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2232%22%20y=%2292%22%20width=%2216%22%20height=%2248%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%2232%22%20y=%2292%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%2232%22%20y=%22100%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%2232%22%20y=%22110%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2232%22%20y=%22120%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2232%22%20y=%22130%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2248%22%20y=%2288%22%20width=%2216%22%20height=%2252%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%2248%22%20y=%2288%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%2248%22%20y=%2296%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%2248%22%20y=%22106%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2248%22%20y=%22116%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2248%22%20y=%22126%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2248%22%20y=%22136%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2264%22%20y=%2284%22%20width=%2216%22%20height=%2256%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%2264%22%20y=%2284%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%2264%22%20y=%2292%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%2264%22%20y=%22102%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2264%22%20y=%22112%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2264%22%20y=%22122%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2264%22%20y=%22132%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2280%22%20y=%2282%22%20width=%2216%22%20height=%2258%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%2280%22%20y=%2282%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%2280%22%20y=%2290%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%2280%22%20y=%22100%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2280%22%20y=%22110%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2280%22%20y=%22120%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2280%22%20y=%22130%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2296%22%20y=%2282%22%20width=%2216%22%20height=%2258%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%2296%22%20y=%2282%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%2296%22%20y=%2290%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%2296%22%20y=%22100%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2296%22%20y=%22110%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2296%22%20y=%22120%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2296%22%20y=%22130%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22112%22%20y=%2284%22%20width=%2216%22%20height=%2256%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%22112%22%20y=%2284%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%22112%22%20y=%2292%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%22112%22%20y=%22102%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22112%22%20y=%22112%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22112%22%20y=%22122%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22112%22%20y=%22132%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22128%22%20y=%2288%22%20width=%2216%22%20height=%2252%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%22128%22%20y=%2288%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%22128%22%20y=%2296%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%22128%22%20y=%22106%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22128%22%20y=%22116%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22128%22%20y=%22126%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22128%22%20y=%22136%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22144%22%20y=%2292%22%20width=%2216%22%20height=%2248%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%22144%22%20y=%2292%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%22144%22%20y=%22100%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%22144%22%20y=%22110%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22144%22%20y=%22120%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22144%22%20y=%22130%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22160%22%20y=%2296%22%20width=%2216%22%20height=%2244%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%22160%22%20y=%2296%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%22160%22%20y=%22104%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%22160%22%20y=%22114%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22160%22%20y=%22124%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22160%22%20y=%22134%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22176%22%20y=%22100%22%20width=%2216%22%20height=%2240%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%22176%22%20y=%22100%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%22176%22%20y=%22108%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%22176%22%20y=%22118%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22176%22%20y=%22128%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22176%22%20y=%22138%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22192%22%20y=%22100%22%20width=%2216%22%20height=%2240%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%22192%22%20y=%22100%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%22192%22%20y=%22108%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%22192%22%20y=%22118%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22192%22%20y=%22128%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22192%22%20y=%22138%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22208%22%20y=%2296%22%20width=%2216%22%20height=%2244%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%22208%22%20y=%2296%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%22208%22%20y=%22104%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%22208%22%20y=%22114%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22208%22%20y=%22124%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22208%22%20y=%22134%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22224%22%20y=%2292%22%20width=%2216%22%20height=%2248%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%22224%22%20y=%2292%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%22224%22%20y=%22100%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%22224%22%20y=%22110%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22224%22%20y=%22120%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22224%22%20y=%22130%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22240%22%20y=%2290%22%20width=%2216%22%20height=%2250%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%22240%22%20y=%2290%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%22240%22%20y=%2298%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%22240%22%20y=%22108%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22240%22%20y=%22118%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22240%22%20y=%22128%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22240%22%20y=%22138%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22256%22%20y=%2290%22%20width=%2216%22%20height=%2250%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%22256%22%20y=%2290%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%22256%22%20y=%2298%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%22256%22%20y=%22108%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22256%22%20y=%22118%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22256%22%20y=%22128%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22256%22%20y=%22138%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22272%22%20y=%2292%22%20width=%2216%22%20height=%2248%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%22272%22%20y=%2292%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%22272%22%20y=%22100%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%22272%22%20y=%22110%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22272%22%20y=%22120%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22272%22%20y=%22130%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22288%22%20y=%2296%22%20width=%2216%22%20height=%2244%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%22288%22%20y=%2296%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%22288%22%20y=%22104%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%22288%22%20y=%22114%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22288%22%20y=%22124%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22288%22%20y=%22134%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22304%22%20y=%2296%22%20width=%2216%22%20height=%2244%22%20fill=%22%239A5A2E%22/%3E%3Crect%20x=%22304%22%20y=%2296%22%20width=%2216%22%20height=%228%22%20fill=%22%235BC236%22/%3E%3Crect%20x=%22304%22%20y=%22104%22%20width=%2216%22%20height=%223%22%20fill=%22%233E9A22%22/%3E%3Crect%20x=%22304%22%20y=%22114%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22304%22%20y=%22124%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%22304%22%20y=%22134%22%20width=%2216%22%20height=%223%22%20fill=%22%237E4824%22/%3E%3Crect%20x=%2248%22%20y=%2282%22%20width=%224%22%20height=%225%22%20fill=%22%23B07A3A%22/%3E%3Crect%20x=%2248%22%20y=%2287%22%20width=%224%22%20height=%221%22%20fill=%22%237A4A22%22/%3E%3Crect%20x=%2248%22%20y=%2276%22%20width=%224%22%20height=%225%22%20fill=%22%23B07A3A%22/%3E%3Crect%20x=%2248%22%20y=%2281%22%20width=%224%22%20height=%221%22%20fill=%22%237A4A22%22/%3E%3Crect%20x=%2249%22%20y=%2270%22%20width=%224%22%20height=%225%22%20fill=%22%23B07A3A%22/%3E%3Crect%20x=%2249%22%20y=%2275%22%20width=%224%22%20height=%221%22%20fill=%22%237A4A22%22/%3E%3Crect%20x=%2249%22%20y=%2264%22%20width=%224%22%20height=%225%22%20fill=%22%23B07A3A%22/%3E%3Crect%20x=%2249%22%20y=%2269%22%20width=%224%22%20height=%221%22%20fill=%22%237A4A22%22/%3E%3Crect%20x=%2250%22%20y=%2258%22%20width=%224%22%20height=%225%22%20fill=%22%23B07A3A%22/%3E%3Crect%20x=%2250%22%20y=%2263%22%20width=%224%22%20height=%221%22%20fill=%22%237A4A22%22/%3E%3Crect%20x=%2250%22%20y=%2252%22%20width=%224%22%20height=%225%22%20fill=%22%23B07A3A%22/%3E%3Crect%20x=%2250%22%20y=%2257%22%20width=%224%22%20height=%221%22%20fill=%22%237A4A22%22/%3E%3Crect%20x=%2251%22%20y=%2246%22%20width=%224%22%20height=%225%22%20fill=%22%23B07A3A%22/%3E%3Crect%20x=%2251%22%20y=%2251%22%20width=%224%22%20height=%221%22%20fill=%22%237A4A22%22/%3E%3Crect%20x=%2235%22%20y=%2246%22%20width=%2214%22%20height=%224%22%20fill=%22%232E9E46%22/%3E%3Crect%20x=%2239%22%20y=%2242%22%20width=%2210%22%20height=%224%22%20fill=%22%232E9E46%22/%3E%3Crect%20x=%2253%22%20y=%2242%22%20width=%2210%22%20height=%224%22%20fill=%22%232E9E46%22/%3E%3Crect%20x=%2255%22%20y=%2246%22%20width=%2216%22%20height=%224%22%20fill=%22%232E9E46%22/%3E%3Crect%20x=%2247%22%20y=%2238%22%20width=%228%22%20height=%224%22%20fill=%22%232E9E46%22/%3E%3Crect%20x=%2233%22%20y=%2250%22%20width=%224%22%20height=%224%22%20fill=%22%232E9E46%22/%3E%3Crect%20x=%2269%22%20y=%2250%22%20width=%224%22%20height=%224%22%20fill=%22%232E9E46%22/%3E%3Crect%20x=%2249%22%20y=%2248%22%20width=%223%22%20height=%223%22%20fill=%22%236B3A1E%22/%3E%3Crect%20x=%2253%22%20y=%2249%22%20width=%223%22%20height=%223%22%20fill=%22%236B3A1E%22/%3E%3Crect%20x=%22214%22%20y=%2288%22%20width=%224%22%20height=%225%22%20fill=%22%23B07A3A%22/%3E%3Crect%20x=%22214%22%20y=%2293%22%20width=%224%22%20height=%221%22%20fill=%22%237A4A22%22/%3E%3Crect%20x=%22214%22%20y=%2282%22%20width=%224%22%20height=%225%22%20fill=%22%23B07A3A%22/%3E%3Crect%20x=%22214%22%20y=%2287%22%20width=%224%22%20height=%221%22%20fill=%22%237A4A22%22/%3E%3Crect%20x=%22215%22%20y=%2276%22%20width=%224%22%20height=%225%22%20fill=%22%23B07A3A%22/%3E%3Crect%20x=%22215%22%20y=%2281%22%20width=%224%22%20height=%221%22%20fill=%22%237A4A22%22/%3E%3Crect%20x=%22215%22%20y=%2270%22%20width=%224%22%20height=%225%22%20fill=%22%23B07A3A%22/%3E%3Crect%20x=%22215%22%20y=%2275%22%20width=%224%22%20height=%221%22%20fill=%22%237A4A22%22/%3E%3Crect%20x=%22216%22%20y=%2264%22%20width=%224%22%20height=%225%22%20fill=%22%23B07A3A%22/%3E%3Crect%20x=%22216%22%20y=%2269%22%20width=%224%22%20height=%221%22%20fill=%22%237A4A22%22/%3E%3Crect%20x=%22216%22%20y=%2258%22%20width=%224%22%20height=%225%22%20fill=%22%23B07A3A%22/%3E%3Crect%20x=%22216%22%20y=%2263%22%20width=%224%22%20height=%221%22%20fill=%22%237A4A22%22/%3E%3Crect%20x=%22217%22%20y=%2252%22%20width=%224%22%20height=%225%22%20fill=%22%23B07A3A%22/%3E%3Crect%20x=%22217%22%20y=%2257%22%20width=%224%22%20height=%221%22%20fill=%22%237A4A22%22/%3E%3Crect%20x=%22201%22%20y=%2252%22%20width=%2214%22%20height=%224%22%20fill=%22%232E9E46%22/%3E%3Crect%20x=%22205%22%20y=%2248%22%20width=%2210%22%20height=%224%22%20fill=%22%232E9E46%22/%3E%3Crect%20x=%22219%22%20y=%2248%22%20width=%2210%22%20height=%224%22%20fill=%22%232E9E46%22/%3E%3Crect%20x=%22221%22%20y=%2252%22%20width=%2216%22%20height=%224%22%20fill=%22%232E9E46%22/%3E%3Crect%20x=%22213%22%20y=%2244%22%20width=%228%22%20height=%224%22%20fill=%22%232E9E46%22/%3E%3Crect%20x=%22199%22%20y=%2256%22%20width=%224%22%20height=%224%22%20fill=%22%232E9E46%22/%3E%3Crect%20x=%22235%22%20y=%2256%22%20width=%224%22%20height=%224%22%20fill=%22%232E9E46%22/%3E%3Crect%20x=%22215%22%20y=%2254%22%20width=%223%22%20height=%223%22%20fill=%22%236B3A1E%22/%3E%3Crect%20x=%22219%22%20y=%2255%22%20width=%223%22%20height=%223%22%20fill=%22%236B3A1E%22/%3E%3C/svg%3E") 0 100% / 320px 140px repeat-x, linear-gradient(#5FB8F5, #BFE6FF 70%);
+      padding-top: clamp(28px, 3vw, 40px);
+      padding-bottom: calc(140px + 8px);
+      image-rendering: pixelated;
+    }
+
+    .vila .sec-head {
+      margin-bottom: 24px;
+      gap: 10px;
+    }
+
+    .vila .sec-head>p:not(.fase-tag) {
+      color: var(--tinta);
+    }
+
+    .vila-in {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: clamp(24px, 4vw, 48px);
+      align-items: stretch;
+    }
+
+    .vila-col {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .vila-col h3 {
+      font-size: 1.9rem;
+    }
+
+    .inclusos {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .inclusos li {
+      display: grid;
+      grid-template-columns: 44px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+      padding: 20px 16px;
+      background: #FFFFFF;
+      box-shadow: 0 0 0 3px var(--tinta), 4px 4px 0 3px var(--tinta);
+    }
+
+    .inc-ico {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      background: var(--ic);
+      color: #FFFFFF;
+      box-shadow: inset 0 0 0 3px var(--tinta);
+    }
+
+    .inc-ico svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .inclusos b {
+      display: block;
+      color: var(--tinta);
+      font: 400 1.35rem/1.1 var(--arcade);
+    }
+
+    .inclusos p {
+      margin-top: 4px;
+      font-size: .86rem;
+      line-height: 1.45;
+    }
+
+    .vila .dialogos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 8px;
+      max-width: none;
+      height: 100%;
+      overflow: hidden;
+      contain: size;
+    }
+
+    .vila .dialogo {
+      grid-template-columns: 54px minmax(0, 1fr);
+      gap: 10px;
+      align-items: start;
+    }
+
+    .vila .dialogo .rosto {
+      display: grid;
+      place-items: center;
+      width: 54px;
+      height: 54px;
+      padding: 5px;
+      border: var(--px) solid var(--tinta);
+      box-shadow: var(--sombra-p);
+    }
+
+    .vila .dialogo .rosto svg {
+      width: 38px;
+      height: 38px;
+    }
+
+    .vila .dialogo summary {
+      min-height: 46px;
+      padding: 0 16px;
+      font-size: 1.25rem;
+    }
+
+    .vila .dialogo details p {
+      padding: 0 16px 10px;
+      font-size: .9rem;
+      line-height: 1.45;
+    }
+
+    .personagens {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 12px;
+      margin-bottom: clamp(56px, 7vw, 80px);
+    }
+
+    .personagens li {
+      padding: 14px 16px;
+      border: 3px solid var(--tinta);
+      background: var(--branco);
+      box-shadow: var(--sombra-p);
+      font-family: "Jersey 10", var(--pixel);
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.1;
+      color: var(--tinta);
+    }
+
+    .personagens li:nth-child(3n+1) {
+      background: #FFF1C2;
+    }
+
+    .personagens li:nth-child(3n+2) {
+      background: #DDF7CF;
+    }
+
+    .dialogos {
+      display: grid;
+      gap: 16px;
+      max-width: 860px;
+    }
+
+    .dialogo {
+      display: grid;
+      grid-template-columns: 64px 1fr;
+      gap: 14px;
+      align-items: start;
+    }
+
+    .dialogo .rosto {
+      width: 64px;
+      height: 64px;
+      padding: 6px;
+      border: 3px solid var(--tinta);
+      background: var(--branco);
+      box-shadow: var(--sombra-p);
+    }
+
+    .dialogo details {
+      border: var(--px) solid var(--tinta);
+      background: var(--branco);
+      box-shadow: var(--sombra-p);
+    }
+
+    .dialogo summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 16px 18px;
+      font-family: "Jersey 10", var(--pixel);
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 1.1;
+      color: var(--tinta);
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .dialogo summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .dialogo summary::after {
+      content: "▼";
+      flex: none;
+      font-size: .9rem;
+      color: var(--azul);
+      transition: transform .2s ease;
+    }
+
+    .dialogo details[open] summary::after {
+      transform: rotate(180deg);
+    }
+
+    @keyframes pisca {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .dialogo details p {
+      padding: 0 18px 18px;
+    }
+
+    .castelo {
+      background: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2264%22%20height=%2264%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%225%22%20y=%227%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2222%22%20y=%223%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2240%22%20y=%2212%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2258%22%20y=%226%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2214%22%20y=%2230%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2233%22%20y=%2224%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2250%22%20y=%2238%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%228%22%20y=%2250%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2227%22%20y=%2257%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2245%22%20y=%2252%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2261%22%20y=%2244%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2218%22%20y=%2215%22%20width=%221%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3Crect%20x=%2255%22%20y=%2227%22%20width=%221%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3Crect%20x=%2236%22%20y=%2246%22%20width=%221%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3C/svg%3E") 0 0 / 128px 128px, linear-gradient(#141530, #2A2C5C);
+      color: #D5D6F2;
+      image-rendering: pixelated;
+      padding-bottom: clamp(56px, 7vw, 88px);
+    }
+
+    .castelo h2 {
+      color: var(--branco);
+    }
+
+    .final {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: clamp(28px, 5vw, 56px);
+      align-items: start;
+    }
+
+    .final-txt {
+      display: grid;
+      gap: 20px;
+    }
+
+    .final-txt {
+      position: relative;
+    }
+
+    .foguete {
+      position: absolute;
+      right: 18%;
+      bottom: -170px;
+      width: 96px;
+      transform: rotate(14deg);
+      pointer-events: none;
+    }
+
+    .foguete-corpo {
+      display: block;
+      width: 96px;
+      height: auto;
+      filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, .35));
+      animation: voa 3.2s ease-in-out infinite;
+    }
+
+    .foguete .fogo.f2 {
+      animation: chama .2s steps(1) infinite;
+    }
+
+    .foguete .fogo.f1 {
+      animation: chama .2s steps(1) infinite reverse;
+    }
+
+    @keyframes chama {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes voa {
+      50% {
+        transform: translateY(-14px);
+      }
+    }
+
+    .foguete i {
+      position: absolute;
+      left: 46%;
+      top: 100%;
+      width: 8px;
+      height: 8px;
+      background: rgba(255, 255, 255, .45);
+      animation: fumaca 1.4s linear infinite;
+    }
+
+    .foguete i:nth-child(3) {
+      animation-delay: -.45s;
+      left: 40%;
+    }
+
+    .foguete i:nth-child(4) {
+      animation-delay: -.9s;
+      left: 52%;
+    }
+
+    @keyframes fumaca {
+      from {
+        transform: translateY(0) scale(1);
+        opacity: .7;
+      }
+
+      to {
+        transform: translateY(56px) scale(1.8);
+        opacity: 0;
+      }
+    }
+
+    .final-txt>p {
+      font-size: 1.1rem;
+    }
+
+    .ficha {
+      display: grid;
+      gap: 14px;
+      padding: 24px;
+      border: var(--px) solid #000;
+      background: var(--creme);
+      color: var(--texto);
+      box-shadow: 6px 6px 0 #000;
+    }
+
+    .ficha-head {
+      font: 400 1.44rem/1.4 var(--arcade);
+      color: var(--tinta);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-family: "Jersey 10", var(--pixel);
+      font-weight: 400;
+      font-size: 1.35rem;
+      color: var(--tinta);
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      min-height: 48px;
+      padding: 10px 12px;
+      border: 3px solid var(--tinta);
+      border-radius: 0;
+      background: var(--branco);
+      color: var(--tinta);
+      font: 500 1rem/1.4 "Poppins", sans-serif;
+    }
+
+    textarea {
+      min-height: 92px;
+      resize: vertical;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: 3px solid var(--azul);
+      outline-offset: 2px;
+    }
+
+    .rodape {
+      padding-block: 26px 34px;
+      background: #0E0F22;
+      color: #8A8CB8;
+      font: 400 1.23rem/1.8 var(--arcade);
+      text-align: center;
+    }
+
+    .rodape b {
+      color: var(--ouro);
+      font-weight: 400;
+    }
+
+    .float {
+      position: fixed;
+      z-index: 30;
+      right: calc(18px + env(safe-area-inset-right, 0px));
+      bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+      display: grid;
+      place-items: center;
+      width: 60px;
+      height: 60px;
+      border: var(--px) solid var(--tinta);
+      background: var(--whats);
+      color: #FFFFFF;
+      box-shadow: var(--sombra-p);
+    }
+
+    .float svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--ouro);
+      outline-offset: 3px;
+    }
+
+    .sr {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+
+    .js .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .2, 1);
+      transition-delay: var(--d, 0ms);
+    }
+
+    .js .reveal.visto {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (max-width: 960px) {
+
+      .hero-in,
+      .case,
+      .balcao,
+      .final {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .case-img {
+        border-right: 0;
+        border-bottom: var(--px) solid var(--tinta);
+      }
+
+      .viloes,
+      .checkpoints,
+      .cases-mini,
+      .passos {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .passos {
+        gap: 18px;
+      }
+
+      .passos::before {
+        left: 52px;
+        right: auto;
+        top: 20px;
+        bottom: 20px;
+        width: 6px;
+        height: auto;
+        background: repeating-linear-gradient(var(--tinta) 0 12px, transparent 12px 22px);
+      }
+
+      .passo-card {
+        grid-template-columns: 76px minmax(0, 1fr);
+        justify-items: start;
+        align-items: start;
+        gap: 14px;
+        padding: 16px 14px 0;
+        text-align: left;
+      }
+
+      .passo-card::after {
+        grid-column: 1 / -1;
+        width: calc(100% + 28px);
+        margin: 0 -14px;
+      }
+
+      .passo-icone {
+        width: 64px;
+        height: 58px;
+      }
+
+      .passo-ico {
+        width: 42px;
+        height: 36px;
+      }
+
+      .passo-icone::after {
+        width: 24px;
+        height: 24px;
+        font-size: 1.05rem;
+        top: -10px;
+        right: -10px;
+      }
+
+      .passo-txt {
+        justify-items: start;
+        padding-bottom: 14px;
+      }
+
+      .passo-txt p {
+        font-size: .9rem;
+      }
+
+      .vitrine-in {
+        grid-template-columns: minmax(0, 1fr);
+        align-items: start;
+      }
+
+      .projetos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+        border-top: 0;
+      }
+
+      .projeto {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding: 8px;
+        border: 2px solid #D8D1C1;
+        background: #FFFFFF;
+      }
+
+      .projeto::before {
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: -2px;
+        width: auto;
+        height: 5px;
+        transform: scaleX(0);
+      }
+
+      .projeto.on {
+        border-color: var(--tinta);
+        box-shadow: 3px 3px 0 var(--tinta);
+      }
+
+      .projeto.on::before {
+        transform: scaleX(1);
+      }
+
+      .projeto-n,
+      .projeto-info {
+        display: none;
+      }
+
+      .projeto .projeto-logo {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 40px;
+      }
+
+      .projeto .projeto-logo img {
+        max-width: 100%;
+        max-height: 36px;
+        object-fit: contain;
+      }
+
+      .cena-logo {
+        width: 78px;
+        height: 44px;
+      }
+
+      .proximo-link {
+        display: none;
+      }
+
+      .hud-nav {
+        display: none;
+      }
+
+      .hud .btn {
+        margin-left: auto;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .hud-in {
+        justify-content: space-between;
+        min-height: 62px;
+      }
+
+      .hud-nome {
+        font-size: 2.3rem;
+      }
+
+      .hud .btn {
+        min-height: 42px;
+        padding: 6px 12px;
+        gap: 6px;
+        font-size: 1.2rem;
+      }
+
+      .hud .btn svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .cta .btn {
+        width: 100%;
+      }
+
+      .itens-mes {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .dialogo,
+      .vila .dialogo {
+        grid-template-columns: 44px minmax(0, 1fr);
+        gap: 8px;
+      }
+
+      .dialogo .rosto {
+        display: grid;
+      }
+
+      .vila .dialogo .rosto {
+        width: 44px;
+        height: 46px;
+        padding: 4px;
+      }
+
+      .vila .dialogo .rosto svg {
+        width: 30px;
+        height: 30px;
+      }
+
+      .vila .dialogo summary {
+        min-height: 38px;
+        padding: 0 12px;
+        font-size: 1.1rem;
+      }
+
+      .vila-in {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .inclusos {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .vila .dialogos {
+        contain: none;
+        height: auto;
+        overflow: visible;
+        justify-content: flex-start;
+      }
+
+      .lojas li {
+        font-size: 1.1rem;
+      }
+
+      .foguete {
+        width: 60px;
+        right: 0;
+        bottom: auto;
+        top: 0;
+      }
+
+      .foguete-corpo {
+        width: 60px;
+      }
+
+      .pc-monitor {
+        padding: 14px 14px 10px;
+      }
+
+      .pc-tela {
+        aspect-ratio: 4 / 3;
+      }
+
+      .desk {
+        padding: 4%;
+      }
+
+      .pc-sombra {
+        filter: drop-shadow(5px 5px 0 var(--tinta));
+      }
+
+      .boot,
+      .janela-bar,
+      .status,
+      .btn-win {
+        font-size: .82rem;
+      }
+
+      .barra {
+        height: 10px;
+      }
+
+      .conexao {
+        padding: 6px;
+      }
+
+      .btn-win {
+        padding: 5px 10px;
+      }
+
+      .globo {
+        width: 32px;
+        height: 32px;
+        background-size: 64px 32px;
+      }
+
+      @keyframes globo {
+        to {
+          background-position: -64px 0;
+        }
+      }
+
+      .ico-pc {
+        width: 36px;
+        height: 31px;
+      }
+
+      .pontos {
+        gap: 4px;
+      }
+
+      .pontos i {
+        width: 6px;
+        height: 6px;
+      }
+
+      .janela-corpo {
+        padding: 6px 8px 8px;
+        gap: 6px;
+      }
+
+      .janela-bar {
+        padding: 3px 5px;
+      }
+
+      .fase-tag {
+        font-size: 1.1rem;
+      }
+
+      .hero {
+        background-size: 64px 20px, 96px 30px, auto;
+        background-position: 70% 2%, 104% 1%, 0 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .js .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      .js .passos::before {
+        opacity: 1;
+        transition: none;
+      }
+
+      .dialogo summary::after,
+      .foguete-corpo,
+      .foguete .fogo,
+      .foguete i {
+        animation: none;
+      }
+    }
+
+    @supports (-moz-appearance: none) {
+      html {
+        scrollbar-color: #FFD23F #1B1D3A;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 14px;
+      height: 14px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1B1D3A;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #FFD23F;
+      border: 3px solid #1B1D3A;
+      box-shadow: inset -3px -3px 0 #E8A300, inset 3px 3px 0 #FFE88A;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #FFE14F;
+    }
+
+    ::-webkit-scrollbar-corner {
+      background: #1B1D3A;
+    }
+
+    ::-webkit-scrollbar-button {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hud">
+    <div class="wrap hud-in">
+      <a class="hud-nome" href="#inicio"><span>THIAGO <b>LUZA</b></span></a>
+      <nav class="hud-nav" aria-label="Seções">
+        <a href="#viloes">O problema</a>
+        <a href="#trabalhos">Projetos</a>
+        <a href="#como">Como funciona</a>
+        <a href="#planos">Planos</a>
+        <a href="#vila">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="btn btn-start"
+        data-wa="Oi Thiago, vi seu portfólio e quero saber mais sobre um site para minha empresa." href="#contato"
+        target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor"
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg><span>WhatsApp</span></a>
+    </div>
+    <div class="hud-xp" aria-hidden="true"><i id="xp"></i></div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" data-fase="INÍCIO">
+      <div class="wrap hero-in">
+        <div class="hero-txt">
+          <p class="fase-tag">THIAGO LUZA · <b>SITES PARA EMPRESAS</b></p>
+          <h1>Sites que fazem o cliente <span class="destaque">chamar no WhatsApp.</span></h1>
+          <p>Sou o Thiago Luza. Faço sites para empresas que aparecem no Google e levam quem procura o seu serviço
+            direto para a conversa com você.</p>
+          <div class="cta">
+            <a class="btn btn-start" data-wa="Oi Thiago, quero um diagnóstico grátis do meu negócio." href="#contato"
+              target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>Diagnóstico grátis</a>
+            <a class="btn" href="#trabalhos">Ver trabalhos</a>
+          </div>
+          <ul class="vidas">
+            <li>Site no ar em até 10 dias</li>
+            <li>Feito para celular</li>
+            <li>Direto comigo</li>
+          </ul>
+        </div>
+        <figure class="pc" aria-label="Computador antigo conectando à internet">
+          <div class="pc-sombra">
+            <div class="pc-borda">
+              <div class="pc-monitor">
+                <div class="pc-tela" id="pc-tela">
+                  <div class="desk">
+                    <div class="janela" id="janela">
+                      <div class="janela-bar"><span id="janela-titulo">Conectando...</span><span
+                          aria-hidden="true">×</span></div>
+                      <div class="janela-corpo">
+                        <div class="conexao" aria-hidden="true"><span class="globo"></span><span
+                            class="pontos"><i></i><i></i><i></i><i></i><i></i></span><svg class="ico-pc"
+                            viewBox="0 0 14 12" shape-rendering="crispEdges" aria-hidden="true">
+                            <rect x="2" y="0" width="10" height="1" fill="#1B1D3A" />
+                            <rect x="2" y="1" width="1" height="1" fill="#1B1D3A" />
+                            <rect x="3" y="1" width="8" height="1" fill="#E6DCC4" />
+                            <rect x="11" y="1" width="1" height="1" fill="#1B1D3A" />
+                            <rect x="2" y="2" width="1" height="1" fill="#1B1D3A" />
+                            <rect x="3" y="2" width="1" height="1" fill="#E6DCC4" />
+                            <rect x="4" y="2" width="6" height="1" fill="#3FA9F5" />
+                            <rect x="10" y="2" width="1" height="1" fill="#E6DCC4" />
+                            <rect x="11" y="2" width="1" height="1" fill="#1B1D3A" />
+                            <rect x="2" y="3" width="1" height="1" fill="#1B1D3A" />
+                            <rect x="3" y="3" width="1" height="1" fill="#E6DCC4" />
+                            <rect x="4" y="3" width="1" height="1" fill="#3FA9F5" />
+                            <rect x="5" y="3" width="1" height="1" fill="#FFFFFF" />
+                            <rect x="6" y="3" width="4" height="1" fill="#3FA9F5" />
+                            <rect x="10" y="3" width="1" height="1" fill="#E6DCC4" />
+                            <rect x="11" y="3" width="1" height="1" fill="#1B1D3A" />
+                            <rect x="2" y="4" width="1" height="1" fill="#1B1D3A" />
+                            <rect x="3" y="4" width="1" height="1" fill="#E6DCC4" />
+                            <rect x="4" y="4" width="6" height="1" fill="#3FA9F5" />
+                            <rect x="10" y="4" width="1" height="1" fill="#E6DCC4" />
+                            <rect x="11" y="4" width="1" height="1" fill="#1B1D3A" />
+                            <rect x="2" y="5" width="1" height="1" fill="#1B1D3A" />
+                            <rect x="3" y="5" width="8" height="1" fill="#E6DCC4" />
+                            <rect x="11" y="5" width="1" height="1" fill="#1B1D3A" />
+                            <rect x="2" y="6" width="10" height="1" fill="#1B1D3A" />
+                            <rect x="5" y="7" width="4" height="1" fill="#1B1D3A" />
+                            <rect x="0" y="8" width="14" height="1" fill="#1B1D3A" />
+                            <rect x="0" y="9" width="1" height="1" fill="#1B1D3A" />
+                            <rect x="1" y="9" width="10" height="1" fill="#E6DCC4" />
+                            <rect x="11" y="9" width="1" height="1" fill="#3FBF4A" />
+                            <rect x="12" y="9" width="1" height="1" fill="#E6DCC4" />
+                            <rect x="13" y="9" width="1" height="1" fill="#1B1D3A" />
+                            <rect x="0" y="10" width="1" height="1" fill="#1B1D3A" />
+                            <rect x="1" y="10" width="1" height="1" fill="#E6DCC4" />
+                            <rect x="2" y="10" width="4" height="1" fill="#1B1D3A" />
+                            <rect x="6" y="10" width="7" height="1" fill="#E6DCC4" />
+                            <rect x="13" y="10" width="1" height="1" fill="#1B1D3A" />
+                            <rect x="0" y="11" width="14" height="1" fill="#1B1D3A" />
+                          </svg></div>
+                        <p class="status" id="status" role="status">Discando...</p>
+                        <div class="barra" aria-hidden="true"><i id="barra"></i></div>
+                        <a class="btn-win" href="#trabalhos">Ver meus trabalhos ▶</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="boot" id="boot" aria-hidden="true">
+                    <p>LUZA-OS v1.0</p>
+                    <p>Memória .......... OK</p>
+                    <p>Teclado .......... OK</p>
+                    <p>Modem ............ OK</p>
+                    <p>Iniciando conexão <span class="cursor"></span></p>
+                  </div>
+                  <button class="replay" id="replay" type="button" aria-label="Reconectar">↻</button>
+                </div>
+                <div class="pc-rodape"><span class="pc-marca" aria-hidden="true">LUZA</span><span class="pc-luz"
+                    aria-hidden="true"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="pc-pe" aria-hidden="true"></div>
+          <div class="pc-gabinete" aria-hidden="true"><span class="pc-disquete"></span><i></i><b></b></div>
+        </figure>
+      </div>
+    </section>
+    <div class="chao" aria-hidden="true"></div>
+
+    <section class="fase caverna" id="viloes" data-fase="O PROBLEMA">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="fase-tag">01 · <b>O PROBLEMA</b></p>
+          <h2>Por que sua empresa perde clientes</h2>
+          <p>Seu serviço é bom. O problema é o caminho até você.</p>
+        </div>
+        <div class="viloes">
+          <div class="vilao" style="--vida: 90%">
+            <h3>O concorrente do Google</h3>
+            <p>Quem pesquisa o seu serviço na cidade encontra primeiro quem tem site e perfil bem feito.</p>
+            <p class="golpe">Solução: site + Google Meu Negócio</p>
+          </div>
+          <div class="vilao" style="--vida: 70%">
+            <h3>O feed que some</h3>
+            <p>Só Instagram não segura. O cliente quer ver serviços, preços e como falar com você num lugar só.</p>
+            <p class="golpe">Solução: uma página que explica tudo</p>
+          </div>
+          <div class="vilao" style="--vida: 80%">
+            <h3>O site que trava</h3>
+            <p>Página lenta, confusa ou sem botão de contato faz a pessoa fechar e chamar outro.</p>
+            <p class="golpe">Solução: rápido e com WhatsApp à vista</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="degrau degrau-caverna-vitrine" aria-hidden="true"></div>
+
+    <section class="fase vitrine" id="trabalhos" data-fase="TRABALHOS">
+      <div class="wrap vitrine-in">
+        <div class="vitrine-lado">
+          <div class="sec-head">
+            <p class="fase-tag">02 · <b>PROJETOS</b></p>
+            <h2>Sites que já estão no ar</h2>
+            <p>Cada site é desenhado do zero, com a cara do negócio.</p>
+          </div>
+          <ol class="projetos" role="tablist" aria-label="Projetos">
+            <li><button class="projeto on" type="button" role="tab" id="aba-0" aria-selected="true"
+                aria-controls="cena-0" style="--cor: #00C2FF">
+                <span class="projeto-n">01</span>
+                <span class="projeto-logo"><img src="img/airtech-logo.svg" alt="" loading="lazy"></span>
+                <span class="projeto-info"><b>Air Tech Clima</b><small>Ar-condicionado</small></span>
+              </button></li>
+            <li><button class="projeto" type="button" role="tab" id="aba-1" aria-selected="false" aria-controls="cena-1"
+                style="--cor: #6B78FF">
+                <span class="projeto-n">02</span>
+                <span class="projeto-logo"><img src="img/viniko-logo.png" alt="" loading="lazy"></span>
+                <span class="projeto-info"><b>Viniko Soluções Visuais</b><small>Comunicação visual</small></span>
+              </button></li>
+            <li><button class="projeto" type="button" role="tab" id="aba-2" aria-selected="false" aria-controls="cena-2"
+                style="--cor: #FF4FA3">
+                <span class="projeto-n">03</span>
+                <span class="projeto-logo"><img src="img/estampariasp-logo.png" alt="" loading="lazy"></span>
+                <span class="projeto-info"><b>Estamparia SP</b><small>Estamparia e silk-screen</small></span>
+              </button></li>
+          </ol>
+          <a class="proximo-link" href="#contato">Sua empresa pode ser a próxima <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="palco">
+          <article class="cena on" id="cena-0" role="tabpanel" aria-labelledby="aba-0" aria-hidden="false">
+            <a class="cena-img" href="https://airtechclima.com.br/" target="_blank" rel="noopener" tabindex="0"
+              aria-label="Abrir o site da Air Tech Clima">
+              <img src="img/airtech-capa.jpg" alt="Página inicial do site da Air Tech Clima" width="1920" height="1200">
+            </a>
+            <div class="cena-info">
+              <div class="cena-topo">
+                <span class="cena-logo"><img src="img/airtech-logo.svg" alt="" loading="lazy"></span>
+                <div>
+                  <h3>Air Tech Clima</h3><small>airtechclima.com.br</small>
+                </div>
+              </div>
+              <p>Site de página única que conta a história da praia enquanto você rola, do calçadão ao mar, e leva cada
+                visita para o WhatsApp da empresa.</p>
+              <ul class="chips">
+                <li>Design e ilustrações próprios</li>
+                <li>Pedido pronto no WhatsApp</li>
+                <li>SEO local</li>
+                <li>Domínio, e-mail e HTTPS</li>
+              </ul>
+              <div class="cena-ctas">
+                <a class="btn btn-site" href="https://airtechclima.com.br/" target="_blank" rel="noopener"
+                  tabindex="0">Ver o site no ar <span aria-hidden="true">↗</span></a>
+                <a class="btn btn-assim"
+                  data-wa="Oi Thiago, vi o site da Air Tech Clima no seu portfólio e quero um assim para minha empresa."
+                  href="#contato" target="_blank" rel="noopener" tabindex="0">Quero um assim</a>
+              </div>
+            </div>
+          </article>
+          <article class="cena" id="cena-1" role="tabpanel" aria-labelledby="aba-1" aria-hidden="true">
+            <a class="cena-img" href="https://viniko.com.br/" target="_blank" rel="noopener" tabindex="-1"
+              aria-label="Abrir o site da Viniko Soluções Visuais">
+              <img src="img/viniko-capa.jpg" alt="Página inicial do site da Viniko Soluções Visuais" width="1920"
+                height="1200" loading="lazy">
+            </a>
+            <div class="cena-info">
+              <div class="cena-topo">
+                <span class="cena-logo"><img src="img/viniko-logo.png" alt="" loading="lazy"></span>
+                <div>
+                  <h3>Viniko Soluções Visuais</h3><small>viniko.com.br</small>
+                </div>
+              </div>
+              <p>Site do grupo que apresenta as três frentes da empresa, comunicação visual, estamparia e lacres de
+                segurança, com portfólio e orçamento direto.</p>
+              <ul class="chips">
+                <li>Três marcas num site só</li>
+                <li>Portfólio por serviço</li>
+                <li>Orçamento à vista</li>
+                <li>SEO local</li>
+              </ul>
+              <div class="cena-ctas">
+                <a class="btn btn-site" href="https://viniko.com.br/" target="_blank" rel="noopener" tabindex="-1">Ver o
+                  site no ar <span aria-hidden="true">↗</span></a>
+                <a class="btn btn-assim"
+                  data-wa="Oi Thiago, vi o site da Viniko Soluções Visuais no seu portfólio e quero um assim para minha empresa."
+                  href="#contato" target="_blank" rel="noopener" tabindex="-1">Quero um assim</a>
+              </div>
+            </div>
+          </article>
+          <article class="cena" id="cena-2" role="tabpanel" aria-labelledby="aba-2" aria-hidden="true">
+            <a class="cena-img" href="https://estampariasp.com.br/" target="_blank" rel="noopener" tabindex="-1"
+              aria-label="Abrir o site da Estamparia SP">
+              <img src="img/estampariasp-capa.jpg" alt="Página inicial do site da Estamparia SP" width="1920"
+                height="1200" loading="lazy">
+            </a>
+            <div class="cena-info">
+              <div class="cena-topo">
+                <span class="cena-logo"><img src="img/estampariasp-logo.png" alt="" loading="lazy"></span>
+                <div>
+                  <h3>Estamparia SP</h3><small>estampariasp.com.br</small>
+                </div>
+              </div>
+              <p>Site da estamparia feito para marcas e confecções pedirem cotação de silk-screen e DTF em poucos
+                cliques, com portfólio e clientes atendidos.</p>
+              <ul class="chips">
+                <li>Cotação em destaque</li>
+                <li>Portfólio de estampas</li>
+                <li>Clientes e estrutura</li>
+                <li>SEO local</li>
+              </ul>
+              <div class="cena-ctas">
+                <a class="btn btn-site" href="https://estampariasp.com.br/" target="_blank" rel="noopener"
+                  tabindex="-1">Ver o site no ar <span aria-hidden="true">↗</span></a>
+                <a class="btn btn-assim"
+                  data-wa="Oi Thiago, vi o site da Estamparia SP no seu portfólio e quero um assim para minha empresa."
+                  href="#contato" target="_blank" rel="noopener" tabindex="-1">Quero um assim</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="degrau degrau-vitrine-trilha" aria-hidden="true"></div>
+
+    <section class="fase trilha" id="como" data-fase="COMO FUNCIONA">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="fase-tag">03 · <b>COMO FUNCIONA</b></p>
+          <h2>Do primeiro contato ao site no ar</h2>
+          <p>Sem reunião infinita e sem termo técnico. Você fala do seu negócio, eu cuido do resto.</p>
+        </div>
+        <ol class="passos">
+          <li class="passo">
+            <div class="passo-card">
+              <span class="passo-icone"><svg class="passo-ico" viewBox="0 0 18 15" shape-rendering="crispEdges"
+                  aria-hidden="true">
+                  <rect x="2" y="0" width="12" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="1" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="2" y="1" width="12" height="1" fill="#FFFFFF" />
+                  <rect x="14" y="1" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="0" y="2" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="2" width="14" height="1" fill="#FFFFFF" />
+                  <rect x="15" y="2" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="0" y="3" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="3" width="2" height="1" fill="#FFFFFF" />
+                  <rect x="3" y="3" width="2" height="1" fill="#2747FF" />
+                  <rect x="5" y="3" width="2" height="1" fill="#FFFFFF" />
+                  <rect x="7" y="3" width="2" height="1" fill="#2747FF" />
+                  <rect x="9" y="3" width="2" height="1" fill="#FFFFFF" />
+                  <rect x="11" y="3" width="2" height="1" fill="#2747FF" />
+                  <rect x="13" y="3" width="2" height="1" fill="#FFFFFF" />
+                  <rect x="15" y="3" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="0" y="4" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="4" width="2" height="1" fill="#FFFFFF" />
+                  <rect x="3" y="4" width="2" height="1" fill="#2747FF" />
+                  <rect x="5" y="4" width="2" height="1" fill="#FFFFFF" />
+                  <rect x="7" y="4" width="2" height="1" fill="#2747FF" />
+                  <rect x="9" y="4" width="2" height="1" fill="#FFFFFF" />
+                  <rect x="11" y="4" width="2" height="1" fill="#2747FF" />
+                  <rect x="13" y="4" width="2" height="1" fill="#FFFFFF" />
+                  <rect x="15" y="4" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="0" y="5" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="5" width="14" height="1" fill="#FFFFFF" />
+                  <rect x="15" y="5" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="6" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="2" y="6" width="12" height="1" fill="#FFFFFF" />
+                  <rect x="14" y="6" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="2" y="7" width="3" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="7" width="2" height="1" fill="#FFFFFF" />
+                  <rect x="7" y="7" width="7" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="8" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="8" width="1" height="1" fill="#FFFFFF" />
+                  <rect x="6" y="8" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="9" width="2" height="1" fill="#1B1D3A" />
+                  <rect x="8" y="9" width="9" height="1" fill="#1B1D3A" />
+                  <rect x="8" y="10" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="9" y="10" width="7" height="1" fill="#25D366" />
+                  <rect x="16" y="10" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="8" y="11" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="9" y="11" width="1" height="1" fill="#25D366" />
+                  <rect x="10" y="11" width="5" height="1" fill="#FFFFFF" />
+                  <rect x="15" y="11" width="1" height="1" fill="#25D366" />
+                  <rect x="16" y="11" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="8" y="12" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="9" y="12" width="7" height="1" fill="#25D366" />
+                  <rect x="16" y="12" width="2" height="1" fill="#1B1D3A" />
+                  <rect x="8" y="13" width="6" height="1" fill="#1B1D3A" />
+                  <rect x="14" y="13" width="2" height="1" fill="#25D366" />
+                  <rect x="16" y="13" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="13" y="14" width="3" height="1" fill="#1B1D3A" />
+                </svg></span>
+              <div class="passo-txt"><span class="passo-prazo">DIA 1</span>
+                <h3>Conversa de 15 minutos</h3>
+                <p>Pelo WhatsApp ou pessoalmente. Entendo o que você faz, quem é seu cliente e o que precisa.</p>
+              </div>
+            </div>
+          </li>
+          <li class="passo">
+            <div class="passo-card">
+              <span class="passo-icone"><svg class="passo-ico" viewBox="0 0 18 16" shape-rendering="crispEdges"
+                  aria-hidden="true">
+                  <rect x="0" y="0" width="18" height="1" fill="#1B1D3A" />
+                  <rect x="0" y="1" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="1" width="16" height="1" fill="#C9D3FF" />
+                  <rect x="17" y="1" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="0" y="2" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="2" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="2" y="2" width="14" height="1" fill="#2747FF" />
+                  <rect x="16" y="2" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="17" y="2" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="0" y="3" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="3" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="2" y="3" width="1" height="1" fill="#2747FF" />
+                  <rect x="3" y="3" width="7" height="1" fill="#FFFFFF" />
+                  <rect x="10" y="3" width="6" height="1" fill="#2747FF" />
+                  <rect x="16" y="3" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="17" y="3" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="0" y="4" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="4" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="2" y="4" width="14" height="1" fill="#2747FF" />
+                  <rect x="16" y="4" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="17" y="4" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="0" y="5" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="5" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="2" y="5" width="1" height="1" fill="#2747FF" />
+                  <rect x="3" y="5" width="4" height="1" fill="#FFFFFF" />
+                  <rect x="7" y="5" width="5" height="1" fill="#2747FF" />
+                  <rect x="12" y="5" width="2" height="1" fill="#FFD23F" />
+                  <rect x="14" y="5" width="2" height="1" fill="#2747FF" />
+                  <rect x="16" y="5" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="17" y="5" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="0" y="6" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="6" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="2" y="6" width="10" height="1" fill="#2747FF" />
+                  <rect x="12" y="6" width="2" height="1" fill="#FFD23F" />
+                  <rect x="14" y="6" width="2" height="1" fill="#2747FF" />
+                  <rect x="16" y="6" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="17" y="6" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="0" y="7" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="7" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="2" y="7" width="1" height="1" fill="#2747FF" />
+                  <rect x="3" y="7" width="5" height="1" fill="#25D366" />
+                  <rect x="8" y="7" width="8" height="1" fill="#2747FF" />
+                  <rect x="16" y="7" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="17" y="7" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="0" y="8" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="8" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="2" y="8" width="14" height="1" fill="#2747FF" />
+                  <rect x="16" y="8" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="17" y="8" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="0" y="9" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="1" y="9" width="16" height="1" fill="#C9D3FF" />
+                  <rect x="17" y="9" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="0" y="10" width="18" height="1" fill="#1B1D3A" />
+                  <rect x="7" y="11" width="4" height="1" fill="#1B1D3A" />
+                  <rect x="7" y="12" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="8" y="12" width="2" height="1" fill="#C9D3FF" />
+                  <rect x="10" y="12" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="13" width="10" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="14" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="14" width="8" height="1" fill="#C9D3FF" />
+                  <rect x="13" y="14" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="15" width="10" height="1" fill="#1B1D3A" />
+                </svg></span>
+              <div class="passo-txt"><span class="passo-prazo">ATÉ 10 DIAS</span>
+                <h3>Site pronto e no ar</h3>
+                <p>Desenho, escrevo os textos e configuro domínio, e-mail e Google. Você aprova antes de publicar.</p>
+              </div>
+            </div>
+          </li>
+          <li class="passo">
+            <div class="passo-card">
+              <span class="passo-icone"><svg class="passo-ico" viewBox="0 0 18 16" shape-rendering="crispEdges"
+                  aria-hidden="true">
+                  <rect x="5" y="0" width="8" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="1" width="10" height="1" fill="#1B1D3A" />
+                  <rect x="16" y="1" width="2" height="1" fill="#FF4D4D" />
+                  <rect x="4" y="2" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="2" width="8" height="1" fill="#C9D3FF" />
+                  <rect x="13" y="2" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="15" y="2" width="3" height="1" fill="#FF4D4D" />
+                  <rect x="4" y="3" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="3" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="6" y="3" width="6" height="1" fill="#25D366" />
+                  <rect x="12" y="3" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="13" y="3" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="16" y="3" width="1" height="1" fill="#FF4D4D" />
+                  <rect x="4" y="4" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="4" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="6" y="4" width="1" height="1" fill="#25D366" />
+                  <rect x="7" y="4" width="4" height="1" fill="#FFFFFF" />
+                  <rect x="11" y="4" width="1" height="1" fill="#25D366" />
+                  <rect x="12" y="4" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="13" y="4" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="5" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="5" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="6" y="5" width="6" height="1" fill="#25D366" />
+                  <rect x="12" y="5" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="13" y="5" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="6" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="6" width="8" height="1" fill="#C9D3FF" />
+                  <rect x="13" y="6" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="7" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="7" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="6" y="7" width="6" height="1" fill="#FFFFFF" />
+                  <rect x="12" y="7" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="13" y="7" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="8" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="8" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="6" y="8" width="4" height="1" fill="#FFFFFF" />
+                  <rect x="10" y="8" width="3" height="1" fill="#C9D3FF" />
+                  <rect x="13" y="8" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="9" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="9" width="8" height="1" fill="#C9D3FF" />
+                  <rect x="13" y="9" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="10" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="10" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="6" y="10" width="6" height="1" fill="#FFFFFF" />
+                  <rect x="12" y="10" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="13" y="10" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="11" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="11" width="1" height="1" fill="#C9D3FF" />
+                  <rect x="6" y="11" width="3" height="1" fill="#FFFFFF" />
+                  <rect x="9" y="11" width="4" height="1" fill="#C9D3FF" />
+                  <rect x="13" y="11" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="12" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="12" width="8" height="1" fill="#C9D3FF" />
+                  <rect x="13" y="12" width="1" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="13" width="10" height="1" fill="#1B1D3A" />
+                  <rect x="4" y="14" width="4" height="1" fill="#1B1D3A" />
+                  <rect x="8" y="14" width="2" height="1" fill="#C9D3FF" />
+                  <rect x="10" y="14" width="4" height="1" fill="#1B1D3A" />
+                  <rect x="5" y="15" width="8" height="1" fill="#1B1D3A" />
+                </svg></span>
+              <div class="passo-txt"><span class="passo-prazo">TODO MÊS</span>
+                <h3>Cliente chegando</h3>
+                <p>O site leva para o seu WhatsApp. Se quiser, eu sigo cuidando dele todo mês.</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <div class="degrau degrau-trilha-loja" aria-hidden="true"></div>
+
+    <section class="fase loja" id="planos" data-fase="PLANOS">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="fase-tag">04 · <b>PLANOS</b></p>
+          <h2>Planos e valores</h2>
+          <p>O site você paga uma vez. A manutenção mensal é opcional, para quem prefere não se preocupar com nada.</p>
+        </div>
+        <div class="balcao">
+          <div class="item lendario">
+            <img class="ico" src="img/itens/bau.png" alt="" loading="lazy">
+            <p class="raro">PAGAMENTO ÚNICO</p>
+            <h3>Site completo</h3>
+            <p class="preco"><small>a partir de</small> R$ 1.500</p>
+            <ul>
+              <li>Design exclusivo, feito para celular</li>
+              <li>Textos escritos para vender</li>
+              <li>Botões e formulário no WhatsApp</li>
+              <li>SEO local e Perfil no Google</li>
+              <li>Domínio, e-mail e cadeado (HTTPS)</li>
+            </ul>
+          </div>
+          <div class="itens-mes">
+            <p class="mensal-head">MANUTENÇÃO MENSAL (OPCIONAL) ▼</p>
+            <div class="item"><img class="ico" src="img/itens/escudo.png" alt="" loading="lazy">
+              <p class="raro">BÁSICO</p>
+              <h3>Essencial</h3>
+              <p class="preco">R$ 79<small>/mês</small></p>
+              <div class="stats">
+                <div>SUPORTE<span style="--v:40%"></span></div>
+                <div>GOOGLE<span style="--v:30%"></span></div>
+                <div>AJUSTES<span style="--v:35%"></span></div>
+              </div>
+              <p>Hospedagem, domínio, cadeado, backup e até 2 ajustes por mês.</p>
+            </div>
+            <div class="item"><img class="ico" src="img/itens/espada.png" alt="" loading="lazy">
+              <p class="raro">MAIS ESCOLHIDO</p>
+              <h3>Profissional</h3>
+              <p class="preco">R$ 149<small>/mês</small></p>
+              <div class="stats">
+                <div>SUPORTE<span style="--v:75%"></span></div>
+                <div>GOOGLE<span style="--v:70%"></span></div>
+                <div>AJUSTES<span style="--v:90%"></span></div>
+              </div>
+              <p>Tudo do Essencial, ajustes à vontade, e-mail e Perfil no Google atualizado.</p>
+            </div>
+            <div class="item"><img class="ico" src="img/itens/chapeu.png" alt="" loading="lazy">
+              <p class="raro">COMPLETO</p>
+              <h3>Crescimento</h3>
+              <p class="preco">R$ 299<small>/mês</small></p>
+              <div class="stats">
+                <div>SUPORTE<span style="--v:100%"></span></div>
+                <div>GOOGLE<span style="--v:100%"></span></div>
+                <div>AJUSTES<span style="--v:100%"></span></div>
+              </div>
+              <p>Tudo do Profissional, posts no Google, relatório de acessos e SEO.</p>
+            </div>
+          </div>
+        </div>
+        <p class="nota">Páginas novas, redesign e anúncios são orçados à parte. Sem fidelidade longa.</p>
+      </div>
+    </section>
+    <div class="degrau degrau-loja-vila" aria-hidden="true"></div>
+
+    <section class="fase vila" id="vila" data-fase="INCLUSO">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="fase-tag">05 · <b>INCLUSO</b></p>
+          <h2>O que vem no seu site</h2>
+          <p>Atendo qualquer tipo de negócio que queira ser encontrado na internet.</p>
+        </div>
+        <div class="vila-in">
+          <div class="vila-col">
+            <h3>Todo site já vem com</h3>
+            <ul class="inclusos">
+              <li style="--ic: #2747FF"><span class="inc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+                    <path d="M12 18h.01" />
+                  </svg></span>
+                <div><b>Feito para celular</b>
+                  <p>Abre bonito e rápido em qualquer tela, do celular ao computador.</p>
+                </div>
+              </li>
+              <li style="--ic: #1FA857"><span class="inc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                  </svg></span>
+                <div><b>Botão de WhatsApp</b>
+                  <p>O cliente fala com você em um clique, com a mensagem já pronta.</p>
+                </div>
+              </li>
+              <li style="--ic: #E8453C"><span class="inc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                  </svg></span>
+                <div><b>Aparece no Google</b>
+                  <p>SEO básico e Perfil da Empresa configurados para ser encontrado.</p>
+                </div>
+              </li>
+              <li style="--ic: #B5307A"><span class="inc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg></span>
+                <div><b>Domínio e e-mail</b>
+                  <p>seunegocio.com.br e um e-mail profissional com a sua marca.</p>
+                </div>
+              </li>
+              <li style="--ic: #C98A00"><span class="inc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                  </svg></span>
+                <div><b>Cadeado de segurança</b>
+                  <p>HTTPS ativo, sem aquele aviso de site inseguro no navegador.</p>
+                </div>
+              </li>
+              <li style="--ic: #FF7A1A"><span class="inc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                      d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
+                  </svg></span>
+                <div><b>Carrega rápido</b>
+                  <p>Leve e sem plugin pesado: abre em segundos, até no 4G.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="vila-col">
+            <h3>Dúvidas frequentes</h3>
+            <div class="dialogos">
+              <div class="dialogo">
+                <div class="rosto"><svg viewBox="0 0 12 12" shape-rendering="crispEdges" aria-hidden="true">
+                    <rect x="3" y="0" width="6" height="1" fill="#5A3A24" />
+                    <rect x="2" y="1" width="8" height="1" fill="#5A3A24" />
+                    <rect x="1" y="2" width="3" height="1" fill="#5A3A24" />
+                    <rect x="4" y="2" width="4" height="1" fill="#F2B98A" />
+                    <rect x="8" y="2" width="3" height="1" fill="#5A3A24" />
+                    <rect x="1" y="3" width="1" height="1" fill="#5A3A24" />
+                    <rect x="2" y="3" width="8" height="1" fill="#F2B98A" />
+                    <rect x="10" y="3" width="1" height="1" fill="#5A3A24" />
+                    <rect x="1" y="4" width="2" height="1" fill="#F2B98A" />
+                    <rect x="3" y="4" width="1" height="1" fill="#1B1D3A" />
+                    <rect x="4" y="4" width="4" height="1" fill="#F2B98A" />
+                    <rect x="8" y="4" width="1" height="1" fill="#1B1D3A" />
+                    <rect x="9" y="4" width="2" height="1" fill="#F2B98A" />
+                    <rect x="1" y="5" width="10" height="1" fill="#F2B98A" />
+                    <rect x="1" y="6" width="4" height="1" fill="#F2B98A" />
+                    <rect x="5" y="6" width="2" height="1" fill="#D99A6C" />
+                    <rect x="7" y="6" width="4" height="1" fill="#F2B98A" />
+                    <rect x="2" y="7" width="3" height="1" fill="#F2B98A" />
+                    <rect x="5" y="7" width="2" height="1" fill="#B5532E" />
+                    <rect x="7" y="7" width="3" height="1" fill="#F2B98A" />
+                    <rect x="3" y="8" width="6" height="1" fill="#F2B98A" />
+                    <rect x="2" y="9" width="3" height="1" fill="#2747FF" />
+                    <rect x="5" y="9" width="2" height="1" fill="#F2B98A" />
+                    <rect x="7" y="9" width="3" height="1" fill="#2747FF" />
+                    <rect x="1" y="10" width="10" height="1" fill="#2747FF" />
+                    <rect x="1" y="11" width="10" height="1" fill="#2747FF" />
+                  </svg></div>
+                <details>
+                  <summary>Preciso de site se já tenho Instagram?</summary>
+                  <p>O Instagram fala com quem já te segue. O site aparece para quem ainda não te conhece e te procura
+                    no Google.</p>
+                </details>
+              </div>
+              <div class="dialogo">
+                <div class="rosto"><svg viewBox="0 0 12 12" shape-rendering="crispEdges" aria-hidden="true">
+                    <rect x="3" y="0" width="6" height="1" fill="#1E1A22" />
+                    <rect x="2" y="1" width="8" height="1" fill="#1E1A22" />
+                    <rect x="1" y="2" width="2" height="1" fill="#1E1A22" />
+                    <rect x="3" y="2" width="6" height="1" fill="#F6C9A0" />
+                    <rect x="9" y="2" width="2" height="1" fill="#1E1A22" />
+                    <rect x="1" y="3" width="1" height="1" fill="#1E1A22" />
+                    <rect x="2" y="3" width="8" height="1" fill="#F6C9A0" />
+                    <rect x="10" y="3" width="1" height="1" fill="#1E1A22" />
+                    <rect x="1" y="4" width="1" height="1" fill="#1E1A22" />
+                    <rect x="2" y="4" width="1" height="1" fill="#F6C9A0" />
+                    <rect x="3" y="4" width="1" height="1" fill="#1B1D3A" />
+                    <rect x="4" y="4" width="4" height="1" fill="#F6C9A0" />
+                    <rect x="8" y="4" width="1" height="1" fill="#1B1D3A" />
+                    <rect x="9" y="4" width="1" height="1" fill="#F6C9A0" />
+                    <rect x="10" y="4" width="1" height="1" fill="#1E1A22" />
+                    <rect x="0" y="5" width="2" height="1" fill="#1E1A22" />
+                    <rect x="2" y="5" width="8" height="1" fill="#F6C9A0" />
+                    <rect x="10" y="5" width="2" height="1" fill="#1E1A22" />
+                    <rect x="0" y="6" width="2" height="1" fill="#1E1A22" />
+                    <rect x="2" y="6" width="3" height="1" fill="#F6C9A0" />
+                    <rect x="5" y="6" width="2" height="1" fill="#E0A77D" />
+                    <rect x="7" y="6" width="3" height="1" fill="#F6C9A0" />
+                    <rect x="10" y="6" width="2" height="1" fill="#1E1A22" />
+                    <rect x="0" y="7" width="2" height="1" fill="#1E1A22" />
+                    <rect x="2" y="7" width="1" height="1" fill="#FFD23F" />
+                    <rect x="3" y="7" width="2" height="1" fill="#F6C9A0" />
+                    <rect x="5" y="7" width="2" height="1" fill="#D6455A" />
+                    <rect x="7" y="7" width="2" height="1" fill="#F6C9A0" />
+                    <rect x="9" y="7" width="1" height="1" fill="#FFD23F" />
+                    <rect x="10" y="7" width="2" height="1" fill="#1E1A22" />
+                    <rect x="0" y="8" width="2" height="1" fill="#1E1A22" />
+                    <rect x="3" y="8" width="6" height="1" fill="#F6C9A0" />
+                    <rect x="10" y="8" width="2" height="1" fill="#1E1A22" />
+                    <rect x="0" y="9" width="2" height="1" fill="#1E1A22" />
+                    <rect x="3" y="9" width="2" height="1" fill="#E8453C" />
+                    <rect x="5" y="9" width="2" height="1" fill="#F6C9A0" />
+                    <rect x="7" y="9" width="2" height="1" fill="#E8453C" />
+                    <rect x="10" y="9" width="2" height="1" fill="#1E1A22" />
+                    <rect x="0" y="10" width="1" height="1" fill="#1E1A22" />
+                    <rect x="2" y="10" width="8" height="1" fill="#E8453C" />
+                    <rect x="11" y="10" width="1" height="1" fill="#1E1A22" />
+                    <rect x="1" y="11" width="10" height="1" fill="#E8453C" />
+                  </svg></div>
+                <details>
+                  <summary>Quanto tempo leva?</summary>
+                  <p>Em geral até 10 dias depois que você me manda as informações. Você aprova tudo antes de ir ao ar.
+                  </p>
+                </details>
+              </div>
+              <div class="dialogo">
+                <div class="rosto"><svg viewBox="0 0 12 12" shape-rendering="crispEdges" aria-hidden="true">
+                    <rect x="3" y="1" width="6" height="1" fill="#E8B48C" />
+                    <rect x="2" y="2" width="8" height="1" fill="#E8B48C" />
+                    <rect x="1" y="3" width="1" height="1" fill="#C9C9D2" />
+                    <rect x="2" y="3" width="8" height="1" fill="#E8B48C" />
+                    <rect x="10" y="3" width="1" height="1" fill="#C9C9D2" />
+                    <rect x="1" y="4" width="1" height="1" fill="#C9C9D2" />
+                    <rect x="2" y="4" width="3" height="1" fill="#1B1D3A" />
+                    <rect x="5" y="4" width="2" height="1" fill="#E8B48C" />
+                    <rect x="7" y="4" width="3" height="1" fill="#1B1D3A" />
+                    <rect x="10" y="4" width="1" height="1" fill="#C9C9D2" />
+                    <rect x="1" y="5" width="1" height="1" fill="#C9C9D2" />
+                    <rect x="2" y="5" width="1" height="1" fill="#1B1D3A" />
+                    <rect x="3" y="5" width="1" height="1" fill="#DDEBFF" />
+                    <rect x="4" y="5" width="4" height="1" fill="#1B1D3A" />
+                    <rect x="8" y="5" width="1" height="1" fill="#DDEBFF" />
+                    <rect x="9" y="5" width="1" height="1" fill="#1B1D3A" />
+                    <rect x="10" y="5" width="1" height="1" fill="#C9C9D2" />
+                    <rect x="1" y="6" width="1" height="1" fill="#E8B48C" />
+                    <rect x="2" y="6" width="3" height="1" fill="#1B1D3A" />
+                    <rect x="5" y="6" width="2" height="1" fill="#E8B48C" />
+                    <rect x="7" y="6" width="3" height="1" fill="#1B1D3A" />
+                    <rect x="10" y="6" width="1" height="1" fill="#E8B48C" />
+                    <rect x="1" y="7" width="1" height="1" fill="#E8B48C" />
+                    <rect x="2" y="7" width="2" height="1" fill="#D7D7DF" />
+                    <rect x="4" y="7" width="4" height="1" fill="#E8B48C" />
+                    <rect x="8" y="7" width="2" height="1" fill="#D7D7DF" />
+                    <rect x="10" y="7" width="1" height="1" fill="#E8B48C" />
+                    <rect x="2" y="8" width="3" height="1" fill="#D7D7DF" />
+                    <rect x="5" y="8" width="2" height="1" fill="#9C5A40" />
+                    <rect x="7" y="8" width="3" height="1" fill="#D7D7DF" />
+                    <rect x="3" y="9" width="6" height="1" fill="#D7D7DF" />
+                    <rect x="2" y="10" width="3" height="1" fill="#3E7A4A" />
+                    <rect x="5" y="10" width="2" height="1" fill="#D7D7DF" />
+                    <rect x="7" y="10" width="3" height="1" fill="#3E7A4A" />
+                    <rect x="1" y="11" width="10" height="1" fill="#3E7A4A" />
+                  </svg></div>
+                <details>
+                  <summary>O domínio e o site ficam no meu nome?</summary>
+                  <p>Sim, o domínio é registrado em nome da sua empresa. Se um dia quiser sair, você leva tudo.</p>
+                </details>
+              </div>
+              <div class="dialogo">
+                <div class="rosto"><svg viewBox="0 0 12 12" shape-rendering="crispEdges" aria-hidden="true">
+                    <rect x="2" y="0" width="7" height="1" fill="#FFC531" />
+                    <rect x="1" y="1" width="9" height="1" fill="#FFC531" />
+                    <rect x="1" y="2" width="11" height="1" fill="#E8A300" />
+                    <rect x="1" y="3" width="1" height="1" fill="#1E1A22" />
+                    <rect x="2" y="3" width="7" height="1" fill="#8D5A3B" />
+                    <rect x="9" y="3" width="1" height="1" fill="#1E1A22" />
+                    <rect x="1" y="4" width="2" height="1" fill="#8D5A3B" />
+                    <rect x="3" y="4" width="1" height="1" fill="#1B1D3A" />
+                    <rect x="4" y="4" width="4" height="1" fill="#8D5A3B" />
+                    <rect x="8" y="4" width="1" height="1" fill="#1B1D3A" />
+                    <rect x="9" y="4" width="2" height="1" fill="#8D5A3B" />
+                    <rect x="1" y="5" width="10" height="1" fill="#8D5A3B" />
+                    <rect x="1" y="6" width="4" height="1" fill="#8D5A3B" />
+                    <rect x="5" y="6" width="2" height="1" fill="#74472D" />
+                    <rect x="7" y="6" width="4" height="1" fill="#8D5A3B" />
+                    <rect x="2" y="7" width="2" height="1" fill="#8D5A3B" />
+                    <rect x="4" y="7" width="4" height="1" fill="#4A2A1A" />
+                    <rect x="8" y="7" width="2" height="1" fill="#8D5A3B" />
+                    <rect x="3" y="8" width="6" height="1" fill="#8D5A3B" />
+                    <rect x="2" y="9" width="3" height="1" fill="#FF8A2B" />
+                    <rect x="5" y="9" width="2" height="1" fill="#8D5A3B" />
+                    <rect x="7" y="9" width="3" height="1" fill="#FF8A2B" />
+                    <rect x="1" y="10" width="10" height="1" fill="#FF8A2B" />
+                    <rect x="1" y="11" width="10" height="1" fill="#FF8A2B" />
+                  </svg></div>
+                <details>
+                  <summary>Sou obrigado a pagar mensalidade?</summary>
+                  <p>Não. Você pode pagar só o site. A mensalidade é para quem quer que eu cuide de tudo.</p>
+                </details>
+              </div>
+              <div class="dialogo">
+                <div class="rosto"><svg viewBox="0 0 12 12" shape-rendering="crispEdges" aria-hidden="true">
+                    <rect x="4" y="0" width="4" height="1" fill="#F2C94C" />
+                    <rect x="3" y="1" width="1" height="1" fill="#F2C94C" />
+                    <rect x="4" y="1" width="4" height="1" fill="#D9A92E" />
+                    <rect x="8" y="1" width="1" height="1" fill="#F2C94C" />
+                    <rect x="2" y="2" width="8" height="1" fill="#F2C94C" />
+                    <rect x="1" y="3" width="3" height="1" fill="#F2C94C" />
+                    <rect x="4" y="3" width="4" height="1" fill="#F7CFAE" />
+                    <rect x="8" y="3" width="3" height="1" fill="#F2C94C" />
+                    <rect x="1" y="4" width="1" height="1" fill="#F2C94C" />
+                    <rect x="2" y="4" width="8" height="1" fill="#F7CFAE" />
+                    <rect x="10" y="4" width="1" height="1" fill="#F2C94C" />
+                    <rect x="1" y="5" width="2" height="1" fill="#F7CFAE" />
+                    <rect x="3" y="5" width="1" height="1" fill="#1B1D3A" />
+                    <rect x="4" y="5" width="4" height="1" fill="#F7CFAE" />
+                    <rect x="8" y="5" width="1" height="1" fill="#1B1D3A" />
+                    <rect x="9" y="5" width="2" height="1" fill="#F7CFAE" />
+                    <rect x="1" y="6" width="1" height="1" fill="#F7CFAE" />
+                    <rect x="2" y="6" width="1" height="1" fill="#E39A7A" />
+                    <rect x="3" y="6" width="6" height="1" fill="#F7CFAE" />
+                    <rect x="9" y="6" width="1" height="1" fill="#E39A7A" />
+                    <rect x="10" y="6" width="1" height="1" fill="#F7CFAE" />
+                    <rect x="1" y="7" width="4" height="1" fill="#F7CFAE" />
+                    <rect x="5" y="7" width="2" height="1" fill="#E3AE88" />
+                    <rect x="7" y="7" width="4" height="1" fill="#F7CFAE" />
+                    <rect x="2" y="8" width="3" height="1" fill="#F7CFAE" />
+                    <rect x="5" y="8" width="2" height="1" fill="#D6455A" />
+                    <rect x="7" y="8" width="3" height="1" fill="#F7CFAE" />
+                    <rect x="3" y="9" width="6" height="1" fill="#F7CFAE" />
+                    <rect x="2" y="10" width="3" height="1" fill="#9B5BFF" />
+                    <rect x="5" y="10" width="2" height="1" fill="#F7CFAE" />
+                    <rect x="7" y="10" width="3" height="1" fill="#9B5BFF" />
+                    <rect x="1" y="11" width="10" height="1" fill="#9B5BFF" />
+                  </svg></div>
+                <details>
+                  <summary>Atende empresas de qualquer cidade?</summary>
+                  <p>Atendo. A gente resolve tudo pelo WhatsApp e, se precisar, por videochamada.</p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <div class="degrau degrau-vila-castelo" aria-hidden="true"></div>
+
+    <section class="fase castelo" id="contato" data-fase="CONTATO">
+      <div class="wrap final">
+        <div class="final-txt">
+          <p class="fase-tag">06 · <b>CONTATO</b></p>
+          <h2>Vamos colocar sua empresa no Google?</h2>
+          <p>Me conta rapidinho sobre sua empresa. Eu respondo no mesmo dia com uma ideia do que dá para fazer, sem
+            compromisso.</p>
+          <a class="btn btn-start" data-wa="Oi Thiago, quero um diagnóstico grátis do meu negócio." href="#contato"
+            target="_blank" rel="noopener" style="width: fit-content"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor"
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>Chamar no WhatsApp</a>
+          <div class="foguete" aria-hidden="true"><svg class="foguete-corpo" viewBox="0 0 18 29"
+              shape-rendering="crispEdges" aria-hidden="true">
+              <g class="fogo f1">
+                <rect x="7" y="21" width="4" height="1" fill="#FFD23F" />
+                <rect x="6" y="22" width="1" height="1" fill="#FFD23F" />
+                <rect x="7" y="22" width="4" height="1" fill="#FF8A2B" />
+                <rect x="11" y="22" width="1" height="1" fill="#FFD23F" />
+                <rect x="6" y="23" width="1" height="1" fill="#FFD23F" />
+                <rect x="7" y="23" width="1" height="1" fill="#FF8A2B" />
+                <rect x="8" y="23" width="2" height="1" fill="#FF4D4D" />
+                <rect x="10" y="23" width="1" height="1" fill="#FF8A2B" />
+                <rect x="11" y="23" width="1" height="1" fill="#FFD23F" />
+                <rect x="7" y="24" width="1" height="1" fill="#FFD23F" />
+                <rect x="8" y="24" width="2" height="1" fill="#FF8A2B" />
+                <rect x="10" y="24" width="1" height="1" fill="#FFD23F" />
+                <rect x="7" y="25" width="1" height="1" fill="#FFD23F" />
+                <rect x="8" y="25" width="2" height="1" fill="#FF8A2B" />
+                <rect x="10" y="25" width="1" height="1" fill="#FFD23F" />
+                <rect x="8" y="26" width="2" height="1" fill="#FFD23F" />
+                <rect x="8" y="27" width="1" height="1" fill="#FFD23F" />
+              </g>
+              <g class="fogo f2">
+                <rect x="6" y="21" width="6" height="1" fill="#FFD23F" />
+                <rect x="6" y="22" width="1" height="1" fill="#FFD23F" />
+                <rect x="7" y="22" width="4" height="1" fill="#FF8A2B" />
+                <rect x="11" y="22" width="1" height="1" fill="#FFD23F" />
+                <rect x="5" y="23" width="1" height="1" fill="#FFD23F" />
+                <rect x="6" y="23" width="2" height="1" fill="#FF8A2B" />
+                <rect x="8" y="23" width="2" height="1" fill="#FF4D4D" />
+                <rect x="10" y="23" width="2" height="1" fill="#FF8A2B" />
+                <rect x="12" y="23" width="1" height="1" fill="#FFD23F" />
+                <rect x="6" y="24" width="1" height="1" fill="#FFD23F" />
+                <rect x="7" y="24" width="1" height="1" fill="#FF8A2B" />
+                <rect x="8" y="24" width="2" height="1" fill="#FF4D4D" />
+                <rect x="10" y="24" width="1" height="1" fill="#FF8A2B" />
+                <rect x="11" y="24" width="1" height="1" fill="#FFD23F" />
+                <rect x="6" y="25" width="1" height="1" fill="#FFD23F" />
+                <rect x="7" y="25" width="4" height="1" fill="#FF8A2B" />
+                <rect x="11" y="25" width="1" height="1" fill="#FFD23F" />
+                <rect x="7" y="26" width="1" height="1" fill="#FFD23F" />
+                <rect x="8" y="26" width="2" height="1" fill="#FF8A2B" />
+                <rect x="10" y="26" width="1" height="1" fill="#FFD23F" />
+                <rect x="7" y="27" width="4" height="1" fill="#FFD23F" />
+                <rect x="8" y="28" width="2" height="1" fill="#FFD23F" />
+              </g>
+              <rect x="8" y="0" width="2" height="1" fill="#FF4D4D" />
+              <rect x="7" y="1" width="4" height="1" fill="#FF4D4D" />
+              <rect x="6" y="2" width="6" height="1" fill="#FF4D4D" />
+              <rect x="5" y="3" width="8" height="1" fill="#1B1D3A" />
+              <rect x="5" y="4" width="1" height="1" fill="#1B1D3A" />
+              <rect x="6" y="4" width="6" height="1" fill="#F3F1F8" />
+              <rect x="12" y="4" width="1" height="1" fill="#1B1D3A" />
+              <rect x="4" y="5" width="1" height="1" fill="#1B1D3A" />
+              <rect x="5" y="5" width="8" height="1" fill="#F3F1F8" />
+              <rect x="13" y="5" width="1" height="1" fill="#1B1D3A" />
+              <rect x="4" y="6" width="1" height="1" fill="#1B1D3A" />
+              <rect x="5" y="6" width="2" height="1" fill="#F3F1F8" />
+              <rect x="7" y="6" width="4" height="1" fill="#1B1D3A" />
+              <rect x="11" y="6" width="2" height="1" fill="#F3F1F8" />
+              <rect x="13" y="6" width="1" height="1" fill="#1B1D3A" />
+              <rect x="4" y="7" width="1" height="1" fill="#1B1D3A" />
+              <rect x="5" y="7" width="1" height="1" fill="#F3F1F8" />
+              <rect x="6" y="7" width="1" height="1" fill="#1B1D3A" />
+              <rect x="7" y="7" width="2" height="1" fill="#2747FF" />
+              <rect x="9" y="7" width="1" height="1" fill="#8FB0FF" />
+              <rect x="10" y="7" width="1" height="1" fill="#2747FF" />
+              <rect x="11" y="7" width="1" height="1" fill="#1B1D3A" />
+              <rect x="12" y="7" width="1" height="1" fill="#F3F1F8" />
+              <rect x="13" y="7" width="1" height="1" fill="#1B1D3A" />
+              <rect x="4" y="8" width="1" height="1" fill="#1B1D3A" />
+              <rect x="5" y="8" width="1" height="1" fill="#F3F1F8" />
+              <rect x="6" y="8" width="1" height="1" fill="#1B1D3A" />
+              <rect x="7" y="8" width="1" height="1" fill="#2747FF" />
+              <rect x="8" y="8" width="1" height="1" fill="#8FB0FF" />
+              <rect x="9" y="8" width="2" height="1" fill="#2747FF" />
+              <rect x="11" y="8" width="1" height="1" fill="#1B1D3A" />
+              <rect x="12" y="8" width="1" height="1" fill="#F3F1F8" />
+              <rect x="13" y="8" width="1" height="1" fill="#1B1D3A" />
+              <rect x="4" y="9" width="1" height="1" fill="#1B1D3A" />
+              <rect x="5" y="9" width="1" height="1" fill="#F3F1F8" />
+              <rect x="6" y="9" width="1" height="1" fill="#1B1D3A" />
+              <rect x="7" y="9" width="4" height="1" fill="#2747FF" />
+              <rect x="11" y="9" width="1" height="1" fill="#1B1D3A" />
+              <rect x="12" y="9" width="1" height="1" fill="#F3F1F8" />
+              <rect x="13" y="9" width="1" height="1" fill="#1B1D3A" />
+              <rect x="4" y="10" width="1" height="1" fill="#1B1D3A" />
+              <rect x="5" y="10" width="2" height="1" fill="#F3F1F8" />
+              <rect x="7" y="10" width="4" height="1" fill="#1B1D3A" />
+              <rect x="11" y="10" width="2" height="1" fill="#F3F1F8" />
+              <rect x="13" y="10" width="1" height="1" fill="#1B1D3A" />
+              <rect x="4" y="11" width="1" height="1" fill="#1B1D3A" />
+              <rect x="5" y="11" width="8" height="1" fill="#F3F1F8" />
+              <rect x="13" y="11" width="1" height="1" fill="#1B1D3A" />
+              <rect x="4" y="12" width="1" height="1" fill="#1B1D3A" />
+              <rect x="5" y="12" width="8" height="1" fill="#F3F1F8" />
+              <rect x="13" y="12" width="1" height="1" fill="#1B1D3A" />
+              <rect x="4" y="13" width="1" height="1" fill="#1B1D3A" />
+              <rect x="5" y="13" width="2" height="1" fill="#F3F1F8" />
+              <rect x="7" y="13" width="4" height="1" fill="#FF4D4D" />
+              <rect x="11" y="13" width="2" height="1" fill="#F3F1F8" />
+              <rect x="13" y="13" width="1" height="1" fill="#1B1D3A" />
+              <rect x="4" y="14" width="1" height="1" fill="#1B1D3A" />
+              <rect x="5" y="14" width="8" height="1" fill="#F3F1F8" />
+              <rect x="13" y="14" width="1" height="1" fill="#1B1D3A" />
+              <rect x="3" y="15" width="2" height="1" fill="#1B1D3A" />
+              <rect x="5" y="15" width="8" height="1" fill="#F3F1F8" />
+              <rect x="13" y="15" width="2" height="1" fill="#1B1D3A" />
+              <rect x="2" y="16" width="1" height="1" fill="#1B1D3A" />
+              <rect x="3" y="16" width="2" height="1" fill="#FF4D4D" />
+              <rect x="5" y="16" width="1" height="1" fill="#1B1D3A" />
+              <rect x="6" y="16" width="6" height="1" fill="#F3F1F8" />
+              <rect x="12" y="16" width="1" height="1" fill="#1B1D3A" />
+              <rect x="13" y="16" width="2" height="1" fill="#FF4D4D" />
+              <rect x="15" y="16" width="1" height="1" fill="#1B1D3A" />
+              <rect x="1" y="17" width="1" height="1" fill="#1B1D3A" />
+              <rect x="2" y="17" width="3" height="1" fill="#FF4D4D" />
+              <rect x="5" y="17" width="1" height="1" fill="#1B1D3A" />
+              <rect x="6" y="17" width="6" height="1" fill="#F3F1F8" />
+              <rect x="12" y="17" width="1" height="1" fill="#1B1D3A" />
+              <rect x="13" y="17" width="3" height="1" fill="#FF4D4D" />
+              <rect x="16" y="17" width="1" height="1" fill="#1B1D3A" />
+              <rect x="0" y="18" width="1" height="1" fill="#1B1D3A" />
+              <rect x="1" y="18" width="4" height="1" fill="#FF4D4D" />
+              <rect x="5" y="18" width="8" height="1" fill="#1B1D3A" />
+              <rect x="13" y="18" width="4" height="1" fill="#FF4D4D" />
+              <rect x="17" y="18" width="1" height="1" fill="#1B1D3A" />
+              <rect x="0" y="19" width="1" height="1" fill="#1B1D3A" />
+              <rect x="1" y="19" width="3" height="1" fill="#FF4D4D" />
+              <rect x="4" y="19" width="1" height="1" fill="#1B1D3A" />
+              <rect x="6" y="19" width="1" height="1" fill="#1B1D3A" />
+              <rect x="7" y="19" width="4" height="1" fill="#9A9AAE" />
+              <rect x="11" y="19" width="1" height="1" fill="#1B1D3A" />
+              <rect x="13" y="19" width="1" height="1" fill="#1B1D3A" />
+              <rect x="14" y="19" width="3" height="1" fill="#FF4D4D" />
+              <rect x="17" y="19" width="1" height="1" fill="#1B1D3A" />
+              <rect x="0" y="20" width="4" height="1" fill="#1B1D3A" />
+              <rect x="6" y="20" width="6" height="1" fill="#1B1D3A" />
+              <rect x="14" y="20" width="4" height="1" fill="#1B1D3A" />
+            </svg><i></i><i></i><i></i></div>
+        </div>
+        <form class="ficha" id="form">
+          <p class="ficha-head">ME CONTA SOBRE SUA EMPRESA</p>
+          <div><label for="nome">Seu nome</label><input id="nome" name="nome" autocomplete="name" required></div>
+          <div><label for="empresa">Empresa e ramo</label><input id="empresa" name="empresa"
+              placeholder="Ex.: Vidraçaria Silva" required></div>
+          <div><label for="msg">O que você precisa?</label><textarea id="msg" name="msg"
+              placeholder="Ex.: não tenho site / meu site é antigo / quero aparecer no Google"></textarea></div>
+          <button class="btn btn-start" type="submit">Enviar pelo WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p><b>THIAGO LUZA · SITES PARA EMPRESAS</b></p>
+    <p>© 2026 THIAGO LUZA</p>
+  </footer>
+
+  <a class="float" data-wa="Oi Thiago, vi seu portfólio e quero saber mais sobre um site para minha empresa."
+    href="#contato" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24"
+      aria-hidden="true">
+      <path fill="currentColor"
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg></a>
+
+  <script>
+    const WHATSAPP = '5511965746154';
+    const waLink = (t) => 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(t);
+    document.querySelectorAll('[data-wa]').forEach((a) => { a.href = waLink(a.dataset.wa); });
+
+    document.getElementById('form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const f = e.target;
+      const texto = 'Oi Thiago! Sou ' + f.nome.value.trim() + ', da ' + f.empresa.value.trim() + '.' + (f.msg.value.trim() ? '\n' + f.msg.value.trim() : '');
+      window.open(waLink(texto), '_blank', 'noopener');
+    });
+
+    const calmo = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    (() => {
+      const links = [...document.querySelectorAll('.hud-nav a')];
+      const xp = document.getElementById('xp');
+      const secoes = links.map((l) => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+      const io = new IntersectionObserver((itens) => itens.forEach((it) => {
+        if (!it.isIntersecting) return;
+        links.forEach((l) => l.classList.toggle('on', l.getAttribute('href') === '#' + it.target.id));
+      }), { rootMargin: '-45% 0px -50% 0px' });
+      secoes.forEach((s) => io.observe(s));
+
+      let fila = false;
+      const desenha = () => {
+        fila = false;
+        const max = document.documentElement.scrollHeight - innerHeight;
+        const p = max > 0 ? Math.min(1, Math.max(0, scrollY / max)) : 0;
+        xp.style.width = (p * 100) + '%';
+      };
+      const pede = () => { if (!fila) { fila = true; requestAnimationFrame(desenha); } };
+      addEventListener('scroll', pede, { passive: true }); addEventListener('resize', pede); pede();
+    })();
+
+    (() => {
+      const tela = document.getElementById('pc-tela'); if (!tela) return;
+      const boot = document.getElementById('boot'), linhas = [...boot.querySelectorAll('p')];
+      const janela = document.getElementById('janela'), status = document.getElementById('status');
+      const barra = document.getElementById('barra'), titulo = document.getElementById('janela-titulo');
+      const passos = [['Discando...', 20], ['Procurando sua empresa no Google...', 45], ['Abrindo o WhatsApp...', 75], ['Ligando você aos clientes...', 92]];
+      const espera = (ms) => new Promise((ok) => setTimeout(ok, ms));
+      const fim = () => {
+        boot.style.display = 'none'; janela.classList.remove('conectando'); janela.classList.add('conectado');
+        titulo.textContent = 'Conectado!'; status.textContent = 'Conexão estabelecida. Seus clientes estão a um clique.'; barra.style.width = '100%';
+        tela.classList.add('fim');
+      };
+      const roda = async () => {
+        tela.classList.remove('fim'); janela.classList.remove('conectado'); titulo.textContent = 'Conectando...';
+        barra.style.width = '0'; status.textContent = 'Discando...';
+        if (calmo) return fim();
+        boot.style.display = 'block'; linhas.forEach((l) => l.classList.remove('on'));
+        for (const l of linhas) { await espera(380); l.classList.add('on'); }
+        await espera(700); boot.style.display = 'none';
+        janela.classList.add('conectando');
+        for (const [txt, pct] of passos) { status.textContent = txt; barra.style.width = pct + '%'; await espera(1300); }
+        fim();
+      };
+      document.getElementById('replay').addEventListener('click', roda);
+      const io = new IntersectionObserver((itens) => { if (itens[0].isIntersecting) { io.disconnect(); roda(); } }, { threshold: 0.4 });
+      io.observe(tela);
+    })();
+
+    (() => {
+      const abas = [...document.querySelectorAll('.projeto')];
+      const escolhe = (aba) => abas.forEach((a) => {
+        const on = a === aba, cena = document.getElementById(a.getAttribute('aria-controls'));
+        a.classList.toggle('on', on); a.setAttribute('aria-selected', on);
+        cena.classList.toggle('on', on); cena.setAttribute('aria-hidden', !on);
+        cena.querySelectorAll('a').forEach((l) => { l.tabIndex = on ? 0 : -1; });
+      });
+      abas.forEach((a, n) => {
+        a.addEventListener('click', () => escolhe(a));
+        a.addEventListener('mouseenter', () => escolhe(a));
+        a.addEventListener('keydown', (e) => {
+          const d = e.key === 'ArrowDown' || e.key === 'ArrowRight' ? 1 : e.key === 'ArrowUp' || e.key === 'ArrowLeft' ? -1 : 0;
+          if (d) { e.preventDefault(); const b = abas[(n + d + abas.length) % abas.length]; b.focus(); escolhe(b); }
+        });
+      });
+    })();
+
+    document.querySelectorAll('.vila details').forEach((d, _, todos) => d.addEventListener('toggle', () => {
+      if (d.open) todos.forEach((o) => { if (o !== d) o.open = false; });
+    }));
+
+    (() => {
+      const sel = ['.hero-txt > *', '.pc', '.sec-head', '.vilao', '.projetos li', '.palco', '.proximo-link', '.passo', '.balcao > .item', '.itens-mes .item', '.inclusos li', '.dialogo', '.final-txt', '.ficha'];
+      const alvos = [];
+      sel.forEach((s) => document.querySelectorAll(s).forEach((el, i) => {
+        if (el.classList.contains('reveal')) return;
+        el.classList.add('reveal'); el.style.setProperty('--d', Math.min(i, 6) * 70 + 'ms'); alvos.push(el);
+      }));
+      if (!('IntersectionObserver' in window)) { alvos.forEach((el) => el.classList.add('visto')); document.querySelectorAll('.passos').forEach((p) => p.classList.add('prontos')); return; }
+      const io = new IntersectionObserver((itens) => itens.forEach((it) => {
+        if (it.isIntersecting) { it.target.classList.add('visto'); io.unobserve(it.target); const ps = it.target.closest('.passos'); if (ps && [...ps.querySelectorAll('.passo')].every((p) => p.classList.contains('visto'))) setTimeout(() => ps.classList.add('prontos'), 700); }
+      }), { threshold: 0.1, rootMargin: '0px 0px -5% 0px' });
+      alvos.forEach((el) => io.observe(el));
+    })();
+  </script>
+</body>
+
+</html>
