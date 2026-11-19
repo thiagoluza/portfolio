@@ -353,15 +353,36 @@
     .vidas {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 20px;
-      font: 400 1.28rem/1.6 var(--arcade);
-      color: var(--tinta);
+      gap: 12px 10px;
     }
 
-    .vidas li::before {
-      content: "♥ ";
-      color: var(--vermelho);
+    .vidas li {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 10px 5px 5px;
+      background: #FFFFFF;
+      color: var(--tinta);
+      font: 400 1.1rem/1 var(--arcade);
+      box-shadow: 0 0 0 3px var(--tinta), 3px 3px 0 3px var(--tinta);
     }
+
+    .vidas .lc {
+      width: 22px;
+      height: 22px;
+      padding: 4px;
+      color: #FFFFFF;
+      background: var(--azul);
+    }
+
+    .lc {
+      display: inline-block;
+      flex: none;
+      width: 1em;
+      height: 1em;
+      vertical-align: -.15em;
+    }
+
 
     .pc {
       position: relative;
@@ -2302,9 +2323,9 @@
             <a class="btn" href="#trabalhos">Ver trabalhos</a>
           </div>
           <ul class="vidas">
-            <li>Site no ar em até 10 dias</li>
-            <li>Feito para celular</li>
-            <li>Direto comigo</li>
+            <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="10" x2="14" y1="2" y2="2" /> <line x1="12" x2="15" y1="14" y2="11" /> <circle cx="12" cy="14" r="8" /></svg>Site no ar em até 10 dias</li>
+            <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /> <path d="M12 18h.01" /></svg>Feito para celular</li>
+            <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg>Direto comigo</li>
           </ul>
         </div>
         <figure class="pc" aria-label="Computador antigo conectando à internet">
@@ -2467,7 +2488,7 @@
               </ul>
               <div class="cena-ctas">
                 <a class="btn btn-site" href="https://airtechclima.com.br/" target="_blank" rel="noopener"
-                  tabindex="0">Ver o site no ar <span aria-hidden="true">↗</span></a>
+                  tabindex="0">Ver o site no ar <svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></a>
                 <a class="btn btn-assim"
                   data-wa="Oi Thiago, vi o site da Air Tech Clima no seu portfólio e quero um assim para minha empresa."
                   href="#contato" target="_blank" rel="noopener" tabindex="0">Quero um assim</a>
@@ -2497,7 +2518,7 @@
               </ul>
               <div class="cena-ctas">
                 <a class="btn btn-site" href="https://viniko.com.br/" target="_blank" rel="noopener" tabindex="-1">Ver o
-                  site no ar <span aria-hidden="true">↗</span></a>
+                  site no ar <svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></a>
                 <a class="btn btn-assim"
                   data-wa="Oi Thiago, vi o site da Viniko Soluções Visuais no seu portfólio e quero um assim para minha empresa."
                   href="#contato" target="_blank" rel="noopener" tabindex="-1">Quero um assim</a>
@@ -2527,7 +2548,7 @@
               </ul>
               <div class="cena-ctas">
                 <a class="btn btn-site" href="https://estampariasp.com.br/" target="_blank" rel="noopener"
-                  tabindex="-1">Ver o site no ar <span aria-hidden="true">↗</span></a>
+                  tabindex="-1">Ver o site no ar <svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></a>
                 <a class="btn btn-assim"
                   data-wa="Oi Thiago, vi o site da Estamparia SP no seu portfólio e quero um assim para minha empresa."
                   href="#contato" target="_blank" rel="noopener" tabindex="-1">Quero um assim</a>
