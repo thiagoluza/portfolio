@@ -37,8 +37,8 @@
       --creme: #FFF6E2;
       --branco: #FFFFFF;
       --px: 4px;
-      --sombra: 6px 6px 0 var(--tinta);
-      --sombra-p: 4px 4px 0 var(--tinta);
+      --sombra: 6px 6px 0 rgba(27, 29, 58, .28);
+      --sombra-p: 4px 4px 0 rgba(27, 29, 58, .28);
       --gut: clamp(16px, 4vw, 40px);
       --pixel: "Jersey 10", "Poppins", sans-serif;
       --arcade: "Jersey 10", "Poppins", sans-serif;
@@ -186,7 +186,7 @@
 
     .btn:hover {
       transform: translate(-2px, -2px);
-      box-shadow: 6px 6px 0 var(--tinta);
+      box-shadow: 6px 6px 0 rgba(27, 29, 58, .28);
     }
 
     .btn:active {
@@ -291,7 +291,7 @@
       padding: 6px 14px;
       border-width: 3px;
       font-size: 1.25rem;
-      box-shadow: 3px 3px 0 #000;
+      box-shadow: 3px 3px 0 rgba(0, 0, 0, .4);
     }
 
     .hud .btn {
@@ -371,7 +371,7 @@
       background: #FFFFFF;
       color: var(--tinta);
       font: 400 1.1rem/1 var(--arcade);
-      box-shadow: 0 0 0 3px var(--tinta), 3px 3px 0 3px var(--tinta);
+      box-shadow: 0 0 0 3px var(--tinta), 3px 3px 0 3px rgba(27, 29, 58, .28);
     }
 
     .vidas .lc {
@@ -399,7 +399,7 @@
     }
 
     .pc-sombra {
-      filter: drop-shadow(8px 8px 0 var(--tinta));
+      filter: drop-shadow(8px 8px 0 rgba(27, 29, 58, .28));
     }
 
     .pc-borda {
@@ -762,7 +762,7 @@
       padding: 24px;
       border: var(--px) solid #000;
       background: #2C2D52;
-      box-shadow: 6px 6px 0 #000;
+      box-shadow: 6px 6px 0 rgba(0, 0, 0, .4);
     }
 
     .vilao .hp {
@@ -780,13 +780,6 @@
       background: linear-gradient(90deg, var(--vermelho) 0 var(--vida, 80%), #45466E var(--vida, 80%));
     }
 
-    .vilao .golpe {
-      margin-top: 4px;
-      padding-top: 12px;
-      border-top: 3px dashed #45466E;
-      color: var(--ouro);
-      font-weight: 700;
-    }
 
     .campo {
       background: linear-gradient(#C9ECFF, #E4F7D2);
@@ -870,8 +863,10 @@
       padding-block: clamp(28px, 3vw, 40px);
     }
 
+    .vila h2,
     .vitrine h2 {
-      color: var(--tinta);
+      color: var(--ouro);
+      text-shadow: 4px 4px 0 var(--tinta);
     }
 
     .vitrine .wrap {
@@ -1015,7 +1010,7 @@
       display: block;
       border: 3px solid var(--tinta);
       background: var(--tinta);
-      box-shadow: 8px 8px 0 var(--tinta);
+      box-shadow: 8px 8px 0 rgba(27, 29, 58, .28);
       overflow: hidden;
     }
 
@@ -1112,12 +1107,12 @@
     .btn-site {
       background: var(--azul);
       color: var(--branco);
-      box-shadow: 4px 4px 0 var(--tinta);
+      box-shadow: 4px 4px 0 rgba(27, 29, 58, .28);
     }
 
     .btn-site:hover {
       background: #3B5BFF;
-      box-shadow: 6px 6px 0 var(--tinta);
+      box-shadow: 6px 6px 0 rgba(27, 29, 58, .28);
     }
 
     .btn-site span {
@@ -1129,13 +1124,13 @@
       background: #FFFFFF;
       color: var(--tinta);
       border-color: var(--tinta);
-      box-shadow: 4px 4px 0 var(--tinta);
+      box-shadow: 4px 4px 0 rgba(27, 29, 58, .28);
     }
 
     .btn-assim:hover {
       background: var(--tinta);
       color: var(--branco);
-      box-shadow: 6px 6px 0 var(--tinta);
+      box-shadow: 6px 6px 0 rgba(27, 29, 58, .28);
     }
 
     .vitrine .btn {
@@ -1273,7 +1268,7 @@
       padding: 26px 22px 0;
       background: #FFFFFF;
       text-align: center;
-      box-shadow: 0 0 0 4px var(--tinta), 6px 6px 0 4px var(--tinta);
+      box-shadow: 0 0 0 4px var(--tinta), 6px 6px 0 4px rgba(27, 29, 58, .28);
     }
 
     .passo-card::after {
@@ -1395,7 +1390,7 @@
       border: var(--px) solid #000;
       background: var(--creme);
       color: var(--texto);
-      box-shadow: 6px 6px 0 #000;
+      box-shadow: 6px 6px 0 rgba(0, 0, 0, .4);
     }
 
     .item .ico {
@@ -1519,7 +1514,7 @@
       align-items: start;
       padding: 20px 16px;
       background: #FFFFFF;
-      box-shadow: 0 0 0 3px var(--tinta), 4px 4px 0 3px var(--tinta);
+      box-shadow: 0 0 0 3px var(--tinta), 4px 4px 0 3px rgba(27, 29, 58, .28);
     }
 
     .inc-ico {
@@ -1796,7 +1791,7 @@
       border: var(--px) solid #000;
       background: var(--creme);
       color: var(--texto);
-      box-shadow: 6px 6px 0 #000;
+      box-shadow: 6px 6px 0 rgba(0, 0, 0, .4);
     }
 
     .ficha-head {
@@ -1831,9 +1826,12 @@
     }
 
     input:focus,
-    textarea:focus {
-      outline: 3px solid var(--azul);
-      outline-offset: 2px;
+    textarea:focus,
+    input:focus-visible,
+    textarea:focus-visible {
+      outline: none;
+      background: #FFFBEA;
+      box-shadow: 4px 4px 0 var(--ouro);
     }
 
     .rodape {
@@ -2105,7 +2103,7 @@
 
       .projeto.on {
         border-color: var(--tinta);
-        box-shadow: 3px 3px 0 var(--tinta);
+        box-shadow: 3px 3px 0 rgba(27, 29, 58, .28);
       }
 
       .projeto.on::before {
@@ -2248,7 +2246,7 @@
       }
 
       .pc-sombra {
-        filter: drop-shadow(5px 5px 0 var(--tinta));
+        filter: drop-shadow(5px 5px 0 rgba(27, 29, 58, .28));
       }
 
       .boot,
@@ -2445,7 +2443,7 @@
 
     .destaque-plano {
       position: relative;
-      box-shadow: 0 0 0 4px var(--ouro), 6px 6px 0 4px #000;
+      box-shadow: 0 0 0 4px var(--ouro), 6px 6px 0 4px rgba(0, 0, 0, .4);
     }
 
     .destaque-plano .btn-plano {
@@ -2522,7 +2520,7 @@
 
     .destaque-plano {
       padding-top: 30px !important;
-      box-shadow: 0 0 0 3px var(--ouro), 6px 6px 0 3px #000;
+      box-shadow: 0 0 0 3px var(--ouro), 6px 6px 0 3px rgba(0, 0, 0, .4);
     }
 
     .selo {
@@ -2601,11 +2599,11 @@
       border-image: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2236%22%20height=%2236%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%220%22%20y=%220%22%20width=%2236%22%20height=%2236%22%20fill=%22%239A6436%22/%3E%3Crect%20x=%220%22%20y=%220%22%20width=%2236%22%20height=%221%22%20fill=%22%23B98250%22/%3E%3Crect%20x=%220%22%20y=%2235%22%20width=%2236%22%20height=%221%22%20fill=%22%23B98250%22/%3E%3Crect%20x=%220%22%20y=%220%22%20width=%221%22%20height=%2236%22%20fill=%22%23B98250%22/%3E%3Crect%20x=%2235%22%20y=%220%22%20width=%221%22%20height=%2236%22%20fill=%22%23B98250%22/%3E%3Crect%20x=%221%22%20y=%221%22%20width=%2234%22%20height=%221%22%20fill=%22%23A86E3D%22/%3E%3Crect%20x=%221%22%20y=%2234%22%20width=%2234%22%20height=%221%22%20fill=%22%23A86E3D%22/%3E%3Crect%20x=%221%22%20y=%221%22%20width=%221%22%20height=%2234%22%20fill=%22%23A86E3D%22/%3E%3Crect%20x=%2234%22%20y=%221%22%20width=%221%22%20height=%2234%22%20fill=%22%23A86E3D%22/%3E%3Crect%20x=%226%22%20y=%226%22%20width=%2224%22%20height=%221%22%20fill=%22%2386552E%22/%3E%3Crect%20x=%226%22%20y=%2229%22%20width=%2224%22%20height=%221%22%20fill=%22%2386552E%22/%3E%3Crect%20x=%226%22%20y=%226%22%20width=%221%22%20height=%2224%22%20fill=%22%2386552E%22/%3E%3Crect%20x=%2229%22%20y=%226%22%20width=%221%22%20height=%2224%22%20fill=%22%2386552E%22/%3E%3Crect%20x=%2210%22%20y=%2210%22%20width=%2216%22%20height=%221%22%20fill=%22%236E4322%22/%3E%3Crect%20x=%2210%22%20y=%2225%22%20width=%2216%22%20height=%221%22%20fill=%22%236E4322%22/%3E%3Crect%20x=%2210%22%20y=%2210%22%20width=%221%22%20height=%2216%22%20fill=%22%236E4322%22/%3E%3Crect%20x=%2225%22%20y=%2210%22%20width=%221%22%20height=%2216%22%20fill=%22%236E4322%22/%3E%3Crect%20x=%2211%22%20y=%2211%22%20width=%2214%22%20height=%221%22%20fill=%22%234A2C15%22/%3E%3Crect%20x=%2211%22%20y=%2224%22%20width=%2214%22%20height=%221%22%20fill=%22%234A2C15%22/%3E%3Crect%20x=%2211%22%20y=%2211%22%20width=%221%22%20height=%2214%22%20fill=%22%234A2C15%22/%3E%3Crect%20x=%2224%22%20y=%2211%22%20width=%221%22%20height=%2214%22%20fill=%22%234A2C15%22/%3E%3Crect%20x=%224%22%20y=%224%22%20width=%222%22%20height=%222%22%20fill=%22%233A2213%22/%3E%3Crect%20x=%224%22%20y=%224%22%20width=%221%22%20height=%221%22%20fill=%22%23D7B07E%22/%3E%3Crect%20x=%2230%22%20y=%224%22%20width=%222%22%20height=%222%22%20fill=%22%233A2213%22/%3E%3Crect%20x=%2230%22%20y=%224%22%20width=%221%22%20height=%221%22%20fill=%22%23D7B07E%22/%3E%3Crect%20x=%224%22%20y=%2230%22%20width=%222%22%20height=%222%22%20fill=%22%233A2213%22/%3E%3Crect%20x=%224%22%20y=%2230%22%20width=%221%22%20height=%221%22%20fill=%22%23D7B07E%22/%3E%3Crect%20x=%2230%22%20y=%2230%22%20width=%222%22%20height=%222%22%20fill=%22%233A2213%22/%3E%3Crect%20x=%2230%22%20y=%2230%22%20width=%221%22%20height=%221%22%20fill=%22%23D7B07E%22/%3E%3C/svg%3E") 12 / 12px / 0 stretch;
       padding: 18px;
       gap: 12px;
-      box-shadow: inset 0 0 0 2px rgba(74, 44, 21, .35), 0 0 0 4px #1F120A, 8px 8px 0 4px #1F120A;
+      box-shadow: inset 0 0 0 2px rgba(74, 44, 21, .35), 0 0 0 4px #1F120A, 8px 8px 0 4px rgba(31, 18, 10, .4);
     }
 
     .loja .destaque-plano {
-      box-shadow: inset 0 0 0 2px rgba(74, 44, 21, .35), 0 0 0 4px var(--ouro), 8px 8px 0 4px #1F120A;
+      box-shadow: inset 0 0 0 2px rgba(74, 44, 21, .35), 0 0 0 4px var(--ouro), 8px 8px 0 4px rgba(31, 18, 10, .4);
     }
 
     .loja .destaque-plano {
@@ -2797,7 +2795,7 @@
     }
     .trilha .passo-card {
       background: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2232%22%20height=%2216%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%220%22%20y=%220%22%20width=%2232%22%20height=%2216%22%20fill=%22%23F7E2B5%22/%3E%3Crect%20x=%220%22%20y=%220%22%20width=%2232%22%20height=%221%22%20fill=%22%23F0D8A8%22/%3E%3Crect%20x=%220%22%20y=%228%22%20width=%2232%22%20height=%221%22%20fill=%22%23F0D8A8%22/%3E%3Crect%20x=%2212%22%20y=%221%22%20width=%221%22%20height=%227%22%20fill=%22%23F0D8A8%22/%3E%3Crect%20x=%2228%22%20y=%229%22%20width=%221%22%20height=%227%22%20fill=%22%23F0D8A8%22/%3E%3Crect%20x=%224%22%20y=%2210%22%20width=%228%22%20height=%221%22%20fill=%22%23FBEDCB%22/%3E%3Crect%20x=%2217%22%20y=%222%22%20width=%226%22%20height=%221%22%20fill=%22%23FBEDCB%22/%3E%3C/svg%3E") 0 0 / 64px 32px, #F7E2B5;
-      box-shadow: inset 0 0 0 3px #FBEDCB, 0 0 0 4px #5A3519, 6px 6px 0 4px #5A3519;
+      box-shadow: inset 0 0 0 3px #FBEDCB, 0 0 0 4px #5A3519, 6px 6px 0 4px rgba(90, 53, 25, .3);
       image-rendering: pixelated;
     }
 
@@ -2809,7 +2807,7 @@
 
     .trilha .passo-icone {
       background: #FFF4DA;
-      box-shadow: inset 0 0 0 3px #5A3519, 4px 4px 0 #D69650;
+      box-shadow: inset 0 0 0 3px #5A3519, 4px 4px 0 rgba(214, 150, 80, .45);
     }
 
     .trilha .passo-txt h3 {
@@ -2840,7 +2838,7 @@
       padding: 8px 16px;
       font-size: 1.12rem;
       border-width: 3px;
-      box-shadow: 3px 3px 0 var(--tinta);
+      box-shadow: 3px 3px 0 rgba(27, 29, 58, .28);
     }
 
     .cena-ctas .btn svg {
@@ -2901,7 +2899,7 @@
 
     .projeto.on {
       background: #FFFFFF;
-      box-shadow: 4px 4px 0 var(--tinta);
+      box-shadow: 4px 4px 0 rgba(27, 29, 58, .28);
     }
 
     .cena-topo small {
@@ -2914,7 +2912,7 @@
 
     .cena-img {
       border: 4px solid #FFFFFF;
-      box-shadow: 0 0 0 4px var(--tinta), 10px 10px 0 4px var(--tinta);
+      box-shadow: 0 0 0 4px var(--tinta), 10px 10px 0 4px rgba(27, 29, 58, .28);
     }
 
     @media (max-width: 960px) {
@@ -2925,7 +2923,7 @@
 
       .projeto.on {
         border-color: var(--cor);
-        box-shadow: 0 0 0 3px var(--cor), 3px 3px 0 3px var(--tinta);
+        box-shadow: 0 0 0 3px var(--cor), 3px 3px 0 3px rgba(27, 29, 58, .28);
       }
     }
 
@@ -3041,6 +3039,132 @@
 
       .loja .itens-mes .mensal-head {
         justify-self: start;
+      }
+    }
+    .vila .dialogos {
+      padding: 0 8px 8px 0;
+    }
+
+    .vila .inclusos li {
+      box-shadow: 0 0 0 3px var(--tinta), 4px 4px 0 3px rgba(27, 29, 58, .28);
+    }
+
+    .vila .dialogo .rosto,
+    .vila .dialogo details {
+      box-shadow: 4px 4px 0 rgba(27, 29, 58, .28);
+    }
+
+    @media (max-width: 620px) {
+      .vila .dialogos {
+        padding: 0;
+      }
+    }
+    .cena-ctas {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 220px));
+      gap: 14px;
+    }
+
+    .cena-ctas .btn {
+      gap: 8px;
+      min-height: 50px;
+      padding: 10px 14px;
+      font-size: 1.22rem;
+      letter-spacing: .03em;
+      border-width: 3px;
+      box-shadow: 4px 4px 0 rgba(27, 29, 58, .28);
+    }
+
+    .cena-ctas .btn:hover {
+      box-shadow: 6px 6px 0 rgba(27, 29, 58, .28);
+    }
+
+    .cena-ctas .btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .cena-ctas .btn-site {
+      background: var(--tinta);
+      color: #FFFFFF;
+    }
+
+    .cena-ctas .btn-site:hover {
+      background: #2C2F5C;
+    }
+
+    .cena-ctas .btn-site .lc {
+      color: var(--ouro);
+    }
+
+    .cena-ctas .btn-assim .ico-wa {
+      color: #1FA857;
+    }
+
+    .cena-ctas .btn-assim:hover {
+      background: #F1FBF4;
+      color: var(--tinta);
+    }
+
+    @media (max-width: 620px) {
+      .cena-ctas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin-right: 12px;
+      }
+
+      .cena-ctas .btn {
+        min-height: 46px;
+        padding: 8px 8px;
+        font-size: 1.05rem;
+      }
+
+      .cena-ctas .btn svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .hero h1,
+    .trilha h2 {
+      text-shadow: 4px 4px 0 rgba(27, 29, 58, .22);
+    }
+
+    .caverna h2,
+    .loja h2,
+    .castelo h2 {
+      text-shadow: 4px 4px 0 rgba(0, 0, 0, .55);
+    }
+
+    @media (max-width: 620px) {
+      .hero h1,
+      .trilha h2 {
+        text-shadow: 3px 3px 0 rgba(27, 29, 58, .22);
+      }
+
+      .vitrine h2,
+      .vila h2 {
+        text-shadow: 3px 3px 0 var(--tinta);
+      }
+
+      .caverna h2,
+      .loja h2,
+      .castelo h2 {
+        text-shadow: 3px 3px 0 rgba(0, 0, 0, .55);
+      }
+    }
+    .castelo {
+      isolation: isolate;
+      background:
+        url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2244%22%20height=%2230%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%2218%22%20y=%225%22%20width=%228%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2216%22%20y=%226%22%20width=%222%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2218%22%20y=%226%22%20width=%225%22%20height=%221%22%20fill=%22%23FFE0A8%22/%3E%3Crect%20x=%2223%22%20y=%226%22%20width=%223%22%20height=%221%22%20fill=%22%23F2A65A%22/%3E%3Crect%20x=%2226%22%20y=%226%22%20width=%222%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%225%22%20y=%227%22%20width=%226%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2215%22%20y=%227%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2216%22%20y=%227%22%20width=%226%22%20height=%221%22%20fill=%22%23FFE0A8%22/%3E%3Crect%20x=%2222%22%20y=%227%22%20width=%226%22%20height=%221%22%20fill=%22%23F2A65A%22/%3E%3Crect%20x=%2228%22%20y=%227%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%222%22%20y=%228%22%20width=%224%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%226%22%20y=%228%22%20width=%228%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2214%22%20y=%228%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2215%22%20y=%228%22%20width=%226%22%20height=%221%22%20fill=%22%23FFE0A8%22/%3E%3Crect%20x=%2221%22%20y=%228%22%20width=%228%22%20height=%221%22%20fill=%22%23E8834A%22/%3E%3Crect%20x=%2229%22%20y=%228%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%222%22%20y=%229%22%20width=%222%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%224%22%20y=%229%22%20width=%223%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2213%22%20y=%229%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2214%22%20y=%229%22%20width=%226%22%20height=%221%22%20fill=%22%23FFE0A8%22/%3E%3Crect%20x=%2220%22%20y=%229%22%20width=%2210%22%20height=%221%22%20fill=%22%23E8834A%22/%3E%3Crect%20x=%2230%22%20y=%229%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%222%22%20y=%2210%22%20width=%222%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%224%22%20y=%2210%22%20width=%222%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2213%22%20y=%2210%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2214%22%20y=%2210%22%20width=%225%22%20height=%221%22%20fill=%22%23FFE0A8%22/%3E%3Crect%20x=%2219%22%20y=%2210%22%20width=%2211%22%20height=%221%22%20fill=%22%23E8834A%22/%3E%3Crect%20x=%2230%22%20y=%2210%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%223%22%20y=%2211%22%20width=%222%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%225%22%20y=%2211%22%20width=%221%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2212%22%20y=%2211%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2213%22%20y=%2211%22%20width=%225%22%20height=%221%22%20fill=%22%23FFE0A8%22/%3E%3Crect%20x=%2218%22%20y=%2211%22%20width=%2213%22%20height=%221%22%20fill=%22%23F7C27E%22/%3E%3Crect%20x=%2231%22%20y=%2211%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%224%22%20y=%2212%22%20width=%222%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%226%22%20y=%2212%22%20width=%221%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2212%22%20y=%2212%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2213%22%20y=%2212%22%20width=%224%22%20height=%221%22%20fill=%22%23FFE0A8%22/%3E%3Crect%20x=%2217%22%20y=%2212%22%20width=%2213%22%20height=%221%22%20fill=%22%23F7C27E%22/%3E%3Crect%20x=%2230%22%20y=%2212%22%20width=%221%22%20height=%221%22%20fill=%22%23D98A4E%22/%3E%3Crect%20x=%2231%22%20y=%2212%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%225%22%20y=%2213%22%20width=%222%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%227%22%20y=%2213%22%20width=%221%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2212%22%20y=%2213%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2213%22%20y=%2213%22%20width=%223%22%20height=%221%22%20fill=%22%23FFE0A8%22/%3E%3Crect%20x=%2216%22%20y=%2213%22%20width=%2213%22%20height=%221%22%20fill=%22%23F7C27E%22/%3E%3Crect%20x=%2229%22%20y=%2213%22%20width=%222%22%20height=%221%22%20fill=%22%23D98A4E%22/%3E%3Crect%20x=%2231%22%20y=%2213%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2232%22%20y=%2213%22%20width=%221%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%227%22%20y=%2214%22%20width=%221%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%228%22%20y=%2214%22%20width=%222%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2212%22%20y=%2214%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2213%22%20y=%2214%22%20width=%222%22%20height=%221%22%20fill=%22%23FFE0A8%22/%3E%3Crect%20x=%2215%22%20y=%2214%22%20width=%2213%22%20height=%221%22%20fill=%22%23F7C27E%22/%3E%3Crect%20x=%2228%22%20y=%2214%22%20width=%223%22%20height=%221%22%20fill=%22%23D98A4E%22/%3E%3Crect%20x=%2231%22%20y=%2214%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2232%22%20y=%2214%22%20width=%222%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2234%22%20y=%2214%22%20width=%221%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%229%22%20y=%2215%22%20width=%221%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2210%22%20y=%2215%22%20width=%222%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2212%22%20y=%2215%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2213%22%20y=%2215%22%20width=%221%22%20height=%221%22%20fill=%22%23FFE0A8%22/%3E%3Crect%20x=%2214%22%20y=%2215%22%20width=%2213%22%20height=%221%22%20fill=%22%23F2A65A%22/%3E%3Crect%20x=%2227%22%20y=%2215%22%20width=%224%22%20height=%221%22%20fill=%22%23C2603A%22/%3E%3Crect%20x=%2231%22%20y=%2215%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2234%22%20y=%2215%22%20width=%222%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2236%22%20y=%2215%22%20width=%221%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2211%22%20y=%2216%22%20width=%221%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2212%22%20y=%2216%22%20width=%222%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2214%22%20y=%2216%22%20width=%2212%22%20height=%221%22%20fill=%22%23F2A65A%22/%3E%3Crect%20x=%2226%22%20y=%2216%22%20width=%225%22%20height=%221%22%20fill=%22%23C2603A%22/%3E%3Crect%20x=%2231%22%20y=%2216%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2236%22%20y=%2216%22%20width=%221%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2237%22%20y=%2216%22%20width=%222%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2212%22%20y=%2217%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2213%22%20y=%2217%22%20width=%222%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2215%22%20y=%2217%22%20width=%222%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2217%22%20y=%2217%22%20width=%228%22%20height=%221%22%20fill=%22%23F2A65A%22/%3E%3Crect%20x=%2225%22%20y=%2217%22%20width=%226%22%20height=%221%22%20fill=%22%23C2603A%22/%3E%3Crect%20x=%2231%22%20y=%2217%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2237%22%20y=%2217%22%20width=%221%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2238%22%20y=%2217%22%20width=%222%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2212%22%20y=%2218%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2213%22%20y=%2218%22%20width=%223%22%20height=%221%22%20fill=%22%23E8834A%22/%3E%3Crect%20x=%2216%22%20y=%2218%22%20width=%222%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2218%22%20y=%2218%22%20width=%221%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2219%22%20y=%2218%22%20width=%225%22%20height=%221%22%20fill=%22%23E8834A%22/%3E%3Crect%20x=%2224%22%20y=%2218%22%20width=%227%22%20height=%221%22%20fill=%22%23C2603A%22/%3E%3Crect%20x=%2231%22%20y=%2218%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2238%22%20y=%2218%22%20width=%221%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2239%22%20y=%2218%22%20width=%222%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2213%22%20y=%2219%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2214%22%20y=%2219%22%20width=%225%22%20height=%221%22%20fill=%22%23E8834A%22/%3E%3Crect%20x=%2219%22%20y=%2219%22%20width=%222%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2221%22%20y=%2219%22%20width=%222%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2223%22%20y=%2219%22%20width=%227%22%20height=%221%22%20fill=%22%23C2603A%22/%3E%3Crect%20x=%2230%22%20y=%2219%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2238%22%20y=%2219%22%20width=%222%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2240%22%20y=%2219%22%20width=%222%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2213%22%20y=%2220%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2214%22%20y=%2220%22%20width=%228%22%20height=%221%22%20fill=%22%23E8834A%22/%3E%3Crect%20x=%2222%22%20y=%2220%22%20width=%223%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2225%22%20y=%2220%22%20width=%223%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2228%22%20y=%2220%22%20width=%222%22%20height=%221%22%20fill=%22%23C2603A%22/%3E%3Crect%20x=%2230%22%20y=%2220%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2237%22%20y=%2220%22%20width=%223%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2240%22%20y=%2220%22%20width=%222%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2214%22%20y=%2221%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2215%22%20y=%2221%22%20width=%226%22%20height=%221%22%20fill=%22%23F7C27E%22/%3E%3Crect%20x=%2221%22%20y=%2221%22%20width=%226%22%20height=%221%22%20fill=%22%23D98A4E%22/%3E%3Crect%20x=%2227%22%20y=%2221%22%20width=%223%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2230%22%20y=%2221%22%20width=%228%22%20height=%221%22%20fill=%22%23FFF1C9%22/%3E%3Crect%20x=%2238%22%20y=%2221%22%20width=%224%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2215%22%20y=%2222%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2216%22%20y=%2222%22%20width=%224%22%20height=%221%22%20fill=%22%23F7C27E%22/%3E%3Crect%20x=%2220%22%20y=%2222%22%20width=%228%22%20height=%221%22%20fill=%22%23D98A4E%22/%3E%3Crect%20x=%2228%22%20y=%2222%22%20width=%221%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2233%22%20y=%2222%22%20width=%226%22%20height=%221%22%20fill=%22%23D9B98A%22/%3E%3Crect%20x=%2216%22%20y=%2223%22%20width=%222%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2218%22%20y=%2223%22%20width=%221%22%20height=%221%22%20fill=%22%23F7C27E%22/%3E%3Crect%20x=%2219%22%20y=%2223%22%20width=%227%22%20height=%221%22%20fill=%22%23D98A4E%22/%3E%3Crect%20x=%2226%22%20y=%2223%22%20width=%222%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3Crect%20x=%2218%22%20y=%2224%22%20width=%228%22%20height=%221%22%20fill=%22%238A3E2A%22/%3E%3C/svg%3E") right max(2%, calc(50% - 760px)) top 34px / 176px 120px no-repeat,
+        url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2214%22%20height=%2214%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%224%22%20y=%221%22%20width=%226%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%222%22%20y=%222%22%20width=%222%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%224%22%20y=%222%22%20width=%226%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%2210%22%20y=%222%22%20width=%222%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%222%22%20y=%223%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%223%22%20y=%223%22%20width=%228%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%2211%22%20y=%223%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%221%22%20y=%224%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%222%22%20y=%224%22%20width=%222%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%224%22%20y=%224%22%20width=%222%22%20height=%221%22%20fill=%22%23A9ACC6%22/%3E%3Crect%20x=%226%22%20y=%224%22%20width=%224%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%2210%22%20y=%224%22%20width=%221%22%20height=%221%22%20fill=%22%23A9ACC6%22/%3E%3Crect%20x=%2211%22%20y=%224%22%20width=%221%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%2212%22%20y=%224%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%221%22%20y=%225%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%222%22%20y=%225%22%20width=%222%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%224%22%20y=%225%22%20width=%221%22%20height=%221%22%20fill=%22%23A9ACC6%22/%3E%3Crect%20x=%225%22%20y=%225%22%20width=%227%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%2212%22%20y=%225%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%221%22%20y=%226%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%222%22%20y=%226%22%20width=%2210%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%2212%22%20y=%226%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%221%22%20y=%227%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%222%22%20y=%227%22%20width=%226%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%228%22%20y=%227%22%20width=%222%22%20height=%221%22%20fill=%22%23A9ACC6%22/%3E%3Crect%20x=%2210%22%20y=%227%22%20width=%221%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%2211%22%20y=%227%22%20width=%221%22%20height=%221%22%20fill=%22%23B7BAD1%22/%3E%3Crect%20x=%2212%22%20y=%227%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%221%22%20y=%228%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%222%22%20y=%228%22%20width=%226%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%228%22%20y=%228%22%20width=%222%22%20height=%221%22%20fill=%22%23A9ACC6%22/%3E%3Crect%20x=%2210%22%20y=%228%22%20width=%222%22%20height=%221%22%20fill=%22%23B7BAD1%22/%3E%3Crect%20x=%2212%22%20y=%228%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%221%22%20y=%229%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%222%22%20y=%229%22%20width=%223%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%225%22%20y=%229%22%20width=%221%22%20height=%221%22%20fill=%22%23A9ACC6%22/%3E%3Crect%20x=%226%22%20y=%229%22%20width=%223%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%229%22%20y=%229%22%20width=%223%22%20height=%221%22%20fill=%22%23B7BAD1%22/%3E%3Crect%20x=%2212%22%20y=%229%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%222%22%20y=%2210%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%223%22%20y=%2210%22%20width=%225%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%228%22%20y=%2210%22%20width=%223%22%20height=%221%22%20fill=%22%23B7BAD1%22/%3E%3Crect%20x=%2211%22%20y=%2210%22%20width=%221%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%222%22%20y=%2211%22%20width=%222%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%224%22%20y=%2211%22%20width=%223%22%20height=%221%22%20fill=%22%23E4E6F2%22/%3E%3Crect%20x=%227%22%20y=%2211%22%20width=%223%22%20height=%221%22%20fill=%22%23B7BAD1%22/%3E%3Crect%20x=%2210%22%20y=%2211%22%20width=%222%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3Crect%20x=%224%22%20y=%2212%22%20width=%226%22%20height=%221%22%20fill=%22%238D90AE%22/%3E%3C/svg%3E") left 3% bottom 56px / 56px 56px no-repeat,
+        url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%2264%22%20height=%2264%22%20shape-rendering=%22crispEdges%22%3E%3Crect%20x=%225%22%20y=%227%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2222%22%20y=%223%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2240%22%20y=%2212%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2258%22%20y=%226%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2214%22%20y=%2230%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2233%22%20y=%2224%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2250%22%20y=%2238%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%228%22%20y=%2250%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2227%22%20y=%2257%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2245%22%20y=%2252%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2261%22%20y=%2244%22%20width=%221%22%20height=%221%22%20fill=%22%23FFFFFF%22/%3E%3Crect%20x=%2218%22%20y=%2215%22%20width=%221%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3Crect%20x=%2255%22%20y=%2227%22%20width=%221%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3Crect%20x=%2236%22%20y=%2246%22%20width=%221%22%20height=%221%22%20fill=%22%23FFD23F%22/%3E%3C/svg%3E") 0 0 / 128px 128px,
+        linear-gradient(#141530, #2A2C5C);
+    }
+
+    @media (max-width: 620px) {
+      .castelo {
+        background-position: right -46px top 340px, left 70% top 14px, 0 0, 0 0;
+        background-size: 132px 90px, 40px 40px, 128px 128px, auto;
       }
     }
   </style>
@@ -3166,25 +3290,21 @@
     <section class="fase caverna" id="viloes" data-fase="O PROBLEMA">
       <div class="wrap">
         <div class="sec-head">
-          <p class="fase-tag">01 · <b>O PROBLEMA</b></p>
           <h2>Presença digital faz diferença.</h2>
           <p>Um site profissional passa credibilidade e leva o cliente até você.</p>
         </div>
         <div class="viloes">
           <div class="vilao" style="--vida: 90%">
-            <h3>Visibilidade online</h3>
-            <p>Seja encontrado por quem procura o seu serviço na internet.</p>
-            <p class="golpe">Solução: aparecer no Google da sua região</p>
+            <h3>Seja encontrado no Google</h3>
+            <p>Quem procura o seu serviço na região precisa achar você, não o concorrente.</p>
           </div>
           <div class="vilao" style="--vida: 70%">
-            <h3>Sua empresa em um só lugar</h3>
-            <p>Serviços, portfólio e contato numa página organizada.</p>
-            <p class="golpe">Solução: um link para mandar a qualquer cliente</p>
+            <h3>Tudo num link só</h3>
+            <p>Serviços, fotos e contato organizados numa página que você manda para qualquer cliente.</p>
           </div>
           <div class="vilao" style="--vida: 80%">
-            <h3>Experiência e desempenho</h3>
-            <p>Rápido, fácil de usar e feito para qualquer tela.</p>
-            <p class="golpe">Solução: abre em segundos, até no 4G</p>
+            <h3>Rápido em qualquer tela</h3>
+            <p>Abre em segundos no celular, até no 4G, e o cliente chega no seu WhatsApp com um toque.</p>
           </div>
         </div>
       </div>
@@ -3195,7 +3315,6 @@
       <div class="wrap vitrine-in">
         <div class="vitrine-lado">
           <div class="sec-head">
-            <p class="fase-tag">02 · <b>PROJETOS</b></p>
             <h2>Projetos desenvolvidos</h2>
             <p>Sites reais, no ar. Clique e veja funcionando.</p>
           </div>
@@ -3239,7 +3358,7 @@
                   tabindex="0">Ver o site no ar <svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></a>
                 <a class="btn btn-assim"
                   data-wa="Oi Thiago, vi o site da Air Tech Clima no seu portfólio e quero um assim para minha empresa."
-                  href="#contato" target="_blank" rel="noopener" tabindex="0">Quero um assim</a>
+                  href="#contato" target="_blank" rel="noopener" tabindex="0"><svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true"> <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /> </svg>Quero um assim</a>
               </div>
             </div>
           </article>
@@ -3261,7 +3380,7 @@
                   site no ar <svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></a>
                 <a class="btn btn-assim"
                   data-wa="Oi Thiago, vi o site da Viniko Soluções Visuais no seu portfólio e quero um assim para minha empresa."
-                  href="#contato" target="_blank" rel="noopener" tabindex="-1">Quero um assim</a>
+                  href="#contato" target="_blank" rel="noopener" tabindex="-1"><svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true"> <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /> </svg>Quero um assim</a>
               </div>
             </div>
           </article>
@@ -3283,7 +3402,7 @@
                   tabindex="-1">Ver o site no ar <svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></svg></a>
                 <a class="btn btn-assim"
                   data-wa="Oi Thiago, vi o site da Estamparia SP no seu portfólio e quero um assim para minha empresa."
-                  href="#contato" target="_blank" rel="noopener" tabindex="-1">Quero um assim</a>
+                  href="#contato" target="_blank" rel="noopener" tabindex="-1"><svg class="ico-wa" viewBox="0 0 24 24" aria-hidden="true"> <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /> </svg>Quero um assim</a>
               </div>
             </div>
           </article>
@@ -3296,7 +3415,6 @@
     <section class="fase trilha" id="como" data-fase="COMO FUNCIONA">
       <div class="wrap">
         <div class="sec-head">
-          <p class="fase-tag">03 · <b>COMO FUNCIONA</b></p>
           <h2>Simples, do planejamento ao site no ar.</h2>
           <p>Tudo direto comigo, do primeiro contato à entrega.</p>
         </div>
@@ -3514,7 +3632,6 @@
     <section class="fase loja" id="planos" data-fase="PLANOS">
       <div class="wrap">
         <div class="sec-head">
-          <p class="fase-tag">04 · <b>PLANOS</b></p>
           <h2>Planos e valores</h2>
           <p>Você paga o site uma vez. A manutenção mensal é opcional, para quem prefere não se preocupar com nada.</p>
         </div>
@@ -3592,7 +3709,6 @@
     <section class="fase vila" id="vila" data-fase="INCLUSO">
       <div class="wrap">
         <div class="sec-head">
-          <p class="fase-tag">05 · <b>INCLUSO</b></p>
           <h2>Recursos incluídos em todos os projetos</h2>
           <p>Todos os projetos são desenvolvidos considerando desempenho, usabilidade, segurança e presença digital.</p>
         </div>
@@ -3870,7 +3986,6 @@
     <section class="fase castelo" id="contato" data-fase="CONTATO">
       <div class="wrap final">
         <div class="final-txt">
-          <p class="fase-tag">06 · <b>CONTATO</b></p>
           <h2>Vamos desenvolver o site da sua empresa?</h2>
           <p>Apresente sua ideia e conheça as possibilidades para o seu negócio. Entre em contato para conversar sobre o projeto e solicitar um orçamento sem compromisso.</p>
           <a class="btn btn-start" data-wa="Oi Thiago, quero um diagnóstico grátis do meu negócio." href="#contato"
