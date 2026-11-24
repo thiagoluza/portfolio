@@ -3167,6 +3167,74 @@
         background-size: 132px 90px, 40px 40px, 128px 128px, auto;
       }
     }
+      .loja .balcao {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+      gap: 28px;
+    }
+
+    .loja .itens-mes {
+      grid-template-columns: minmax(0, 1fr);
+      grid-template-rows: none;
+      align-content: start;
+      gap: 18px;
+    }
+
+    .loja .itens-mes .mensal-head {
+      margin-bottom: -4px;
+    }
+
+    .itens-mes .item.comp .raro {
+      font-size: 1rem;
+    }
+
+    .itens-mes .comp-topo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .loja .itens-mes .comp-topo .etiqueta {
+      align-self: center;
+      margin-top: 0;
+      margin-left: auto;
+    }
+
+    .itens-mes .comp .lista-plano {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 16px;
+    }
+
+    .itens-mes .comp-txt {
+      font-size: .95rem;
+    }
+
+    .itens-mes .comp .btn-plano {
+      width: auto;
+      align-self: flex-start;
+      padding-inline: 22px;
+    }
+
+    @media (max-width: 960px) {
+      .loja .balcao {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 620px) {
+      .itens-mes .comp .lista-plano {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .itens-mes .comp .btn-plano {
+        width: 100%;
+      }
+
+      .loja .itens-mes .comp-topo .etiqueta {
+        margin-right: 0;
+      }
+    }
   </style>
 </head>
 
@@ -3650,37 +3718,40 @@
                 <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Textos escritos para vender</li>
                 <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Botão e formulário no WhatsApp</li>
                 <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Preparado para aparecer no Google</li>
-                <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Domínio, e-mail e HTTPS</li>
+                <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Domínio próprio e HTTPS</li>
             </ul>
             <a class="btn btn-plano btn-escuro" data-wa="Oi Thiago, quero fazer o site da minha empresa." href="#contato" target="_blank" rel="noopener">Quero meu site</a>
           </div>
           <div class="itens-mes">
-            <p class="mensal-head">MANUTENÇÃO E SOB MEDIDA</p>
-            <div class="item destaque-plano">
-              <div class="plano-topo"><img class="ico" src="img/itens/escudo.png" alt="" loading="lazy">
-                <div>
-                  <h3>Manutenção</h3>
+            <p class="mensal-head">+ COMPLEMENTOS DO SITE</p>
+            <div class="item comp">
+              <div class="comp-topo">
+                <div class="plano-topo"><img class="ico" src="img/itens/escudo.png" alt="" loading="lazy">
+                  <div>
+                    <p class="raro">JUNTO COM O SITE</p>
+                    <h3>Manutenção mensal</h3>
+                  </div>
                 </div>
+                <p class="preco etiqueta">R$ 40<small>/mês</small></p>
               </div>
-              <p class="preco etiqueta">R$ 40<small>/mês</small></p>
               <ul class="lista-plano">
-                <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hospedagem, domínio e backup</li>
-                <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Segurança e suporte no WhatsApp</li>
+                <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hospedagem e domínio</li>
+                <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Backup e segurança</li>
+                <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Suporte no WhatsApp</li>
                 <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>2 alterações simples por mês</li>
               </ul>
             </div>
-            <div class="item plano-roxo">
-              <div class="plano-topo"><img class="ico" src="img/itens/chapeu.png" alt="" loading="lazy">
-                <div>
-                  <h3>Tem outra ideia?</h3>
+            <div class="item comp plano-roxo">
+              <div class="comp-topo">
+                <div class="plano-topo"><img class="ico" src="img/itens/chapeu.png" alt="" loading="lazy">
+                  <div>
+                    <p class="raro">OPCIONAL</p>
+                    <h3>Tem outra ideia?</h3>
+                  </div>
                 </div>
+                <p class="preco etiqueta">Sob medida</p>
               </div>
-              <p class="preco etiqueta">Sob medida</p>
-              <ul class="lista-plano">
-                <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Mais páginas e seções</li>
-                <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Agendamento online</li>
-                <li><svg class="lc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Sistema de atendimento</li>
-              </ul>
+              <p class="comp-txt">Mais páginas, agendamento online, sistema de atendimento… Me conte o que precisa e eu monto um orçamento.</p>
               <a class="btn btn-plano" data-wa="Oi Thiago, tenho uma ideia de site e queria um orçamento." href="#contato" target="_blank" rel="noopener">Pedir orçamento</a>
             </div>
           </div>
@@ -3731,8 +3802,8 @@
                     <rect width="20" height="16" x="2" y="4" rx="2" />
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                   </svg></span>
-                <div><b>Domínio e e-mail profissional</b>
-                  <p>Presença digital com endereço próprio e comunicação profissional.</p>
+                <div><b>Domínio próprio</b>
+                  <p>Endereço exclusivo para sua empresa, como suaempresa.com.br.</p>
                 </div>
               </li>
               <li style="--ic: #C98A00"><span class="inc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -3883,8 +3954,8 @@
                     <rect x="1" y="11" width="10" height="1" fill="#3E7A4A" />
                   </svg></div>
                 <details>
-                  <summary>O domínio e o site ficam no meu nome?</summary>
-                  <p>Sim, o domínio é registrado em nome da sua empresa. Se um dia quiser sair, você leva tudo.</p>
+                  <summary>Em nome de quem fica o domínio?</summary>
+                  <p>O domínio fica registrado no meu nome e eu cuido da renovação enquanto a manutenção estiver ativa. Se um dia quiser sair, transfiro o domínio para a sua empresa.</p>
                 </details>
               </div>
               <div class="dialogo">
