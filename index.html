@@ -882,6 +882,22 @@
       color: #55587F;
     }
 
+    .vitrine .port-head {
+      max-width: none;
+      justify-items: center;
+      text-align: center;
+      margin: 0 auto clamp(32px, 4vw, 52px);
+    }
+
+    .vitrine .port-head h2 {
+      font-size: clamp(3.2rem, 9vw, 6.5rem);
+      line-height: 1;
+    }
+
+    .vitrine .port-head>p {
+      font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+    }
+
     .vitrine-in {
       display: grid;
       grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr);
@@ -3245,7 +3261,7 @@
       <a class="hud-nome" href="#inicio"><span>THIAGO <b>LUZA</b></span></a>
       <nav class="hud-nav" aria-label="Seções">
         <a href="#viloes">O problema</a>
-        <a href="#trabalhos">Projetos</a>
+        <a href="#trabalhos">Portfólio</a>
         <a href="#como">Como funciona</a>
         <a href="#planos">Valores</a>
         <a href="#vila">Dúvidas</a>
@@ -3379,13 +3395,15 @@
     </section>
     <div class="degrau degrau-caverna-vitrine" aria-hidden="true"></div>
 
-    <section class="fase vitrine" id="trabalhos" data-fase="TRABALHOS">
+    <section class="fase vitrine" id="trabalhos" data-fase="PORTFÓLIO">
+      <div class="wrap">
+        <div class="sec-head port-head">
+          <h2>Portfólio</h2>
+          <p>Sites reais, no ar. Clique e veja funcionando.</p>
+        </div>
+      </div>
       <div class="wrap vitrine-in">
         <div class="vitrine-lado">
-          <div class="sec-head">
-            <h2>Projetos desenvolvidos</h2>
-            <p>Sites reais, no ar. Clique e veja funcionando.</p>
-          </div>
           <ol class="projetos" role="tablist" aria-label="Projetos">
             <li><button class="projeto on" type="button" role="tab" id="aba-0" aria-selected="true"
                 aria-controls="cena-0" style="--cor: #00C2FF">
@@ -4210,7 +4228,7 @@
       <nav class="rodape-col" aria-label="Rodapé">
         <p class="rodape-tit">NAVEGAÇÃO</p>
         <ul>
-          <li><a href="#trabalhos">Projetos</a></li>
+          <li><a href="#trabalhos">Portfólio</a></li>
           <li><a href="#como">Como funciona</a></li>
           <li><a href="#planos">Valores</a></li>
           <li><a href="#contato">Contato</a></li>
